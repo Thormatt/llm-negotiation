@@ -128,7 +128,7 @@ All models accessed via OpenRouter:
   author={Matthiasson, Thor},
   year={2025},
   note={Revised April 2026. Available at
-        \url{https://github.com/Ravenai307/llm-negotiation}}
+        \url{https://github.com/Thormatt/llm-negotiation}}
 }
 ```
 
