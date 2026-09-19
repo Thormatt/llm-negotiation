@@ -1,0 +1,2774 @@
+{
+  "model": "anthropic/claude-3.5-haiku",
+  "world_model": "NegotiationGRU (11,078 params)",
+  "games_per_condition": 20,
+  "max_rounds": 8,
+  "dirichlet_alpha": 1.0,
+  "conditions_run": [
+    "B"
+  ],
+  "results": {
+    "B": [
+      {
+        "deal": true,
+        "buyer_utility": 0.6220786571502686,
+        "seller_utility": 0.48577946424484253,
+        "joint_surplus": 1.107858121395111,
+        "max_joint_surplus": 1.6804317235946655,
+        "pareto_efficiency": 0.6592699398850054,
+        "buyer_surplus_share": 0.5615147329216607,
+        "deal_proposal": [
+          0.30000001192092896,
+          0.36000001430511475,
+          0.28999999165534973,
+          0.6100000143051147,
+          0.27000001072883606
+        ],
+        "optimal_proposal": [
+          0.0,
+          0.0,
+          1.0,
+          1.0,
+          0.0
+        ],
+        "rounds": 7,
+        "turns": [
+          {
+            "role": "buyer",
+            "action": "offer",
+            "proposal": [
+              0.3700000047683716,
+              0.6100000143051147,
+              0.4000000059604645,
+              0.46000000834465027,
+              0.1899999976158142
+            ],
+            "reasoning": "I'll start with a balanced proposal that reflects our strategic priorities. The model suggests a moderate price point, longer contract, reasonable payment terms, and a solid SLA. We want to signal we're serious but not aggressive.",
+            "had_briefing": true
+          },
+          {
+            "role": "seller",
+            "action": "offer",
+            "proposal": [
+              0.3700000047683716,
+              0.5,
+              0.6000000238418579,
+              0.46000000834465027,
+              0.1899999976158142
+            ],
+            "reasoning": "The buyer's initial proposal is decent but has room for improvement. I want to push for faster payment terms and shorter contract length, which are my highest priority variables. I'll make a moderate counter-offer that nudges those variables while keeping other terms close to their current state.",
+            "had_briefing": false
+          },
+          {
+            "role": "buyer",
+            "action": "offer",
+            "proposal": [
+              0.3400000035762787,
+              0.4399999976158142,
+              0.41999998688697815,
+              0.5099999904632568,
+              0.20999999344348907
+            ],
+            "reasoning": "The seller's latest proposal slightly reduced contract length and increased payment terms, which doesn't align perfectly with my priorities. The computed model suggests a strategic adjustment, particularly lowering price and slightly improving SLA and data rights. I'll follow the recommended proposal closely.",
+            "had_briefing": true
+          },
+          {
+            "role": "seller",
+            "action": "offer",
+            "proposal": [
+              0.36000001430511475,
+              0.4699999988079071,
+              0.550000011920929,
+              0.47999998927116394,
+              0.20000000298023224
+            ],
+            "reasoning": "The buyer's latest proposal has lowered several key variables that are important to me, particularly price and payment terms. My utility would drop from my previous proposal. I need to push back strategically, focusing on maintaining higher payment terms and keeping price and contract length favorable.",
+            "had_briefing": false
+          },
+          {
+            "role": "buyer",
+            "action": "offer",
+            "proposal": [
+              0.5400000214576721,
+              0.5,
+              0.3199999928474426,
+              0.550000011920929,
+              0.23999999463558197
+            ],
+            "reasoning": "The seller's latest proposal is close to our utility target. We want to push for a slightly better deal, particularly on SLA tier and payment terms. The computed optimal proposal gives us a strategic approach to incrementally improve our position.",
+            "had_briefing": true
+          },
+          {
+            "role": "seller",
+            "action": "offer",
+            "proposal": [
+              0.5400000214576721,
+              0.4699999988079071,
+              0.3799999952316284,
+              0.5299999713897705,
+              0.2199999988079071
+            ],
+            "reasoning": "The buyer's latest proposal actually gives me a solid utility of 0.476, which is quite good. With only 3 rounds left, I should be cautious about pushing too hard. The price increase is attractive, and while payment terms dropped, other variables look favorable. I'll make a slight adjustment to nudge terms in my direction without risking the deal.",
+            "had_briefing": false
+          },
+          {
+            "role": "buyer",
+            "action": "offer",
+            "proposal": [
+              0.30000001192092896,
+              0.36000001430511475,
+              0.28999999165534973,
+              0.6100000143051147,
+              0.27000001072883606
+            ],
+            "reasoning": "We're in the critical final stages. The seller's last proposal gives me 0.523 utility, which is very close to the model's optimal proposal. With only two rounds left, I need to be strategic. The model suggests pushing for lower price and contract length while maintaining a high SLA tier.",
+            "had_briefing": true
+          },
+          {
+            "role": "seller",
+            "action": "accept",
+            "proposal": null,
+            "reasoning": "[Final-round auto-accept: utility 0.486 > 0.15]",
+            "had_briefing": false
+          }
+        ],
+        "buyer_weights": [
+          0.22206163847244945,
+          0.0924102738330857,
+          0.1565126570329922,
+          0.5276756182731812,
+          0.0013398123882914644
+        ],
+        "seller_weights": [
+          0.032475198385796517,
+          0.27833961627446346,
+          0.4379166835274808,
+          0.03683032814484637,
+          0.2144381736674128
+        ]
+      },
+      {
+        "deal": true,
+        "buyer_utility": 0.6722933053970337,
+        "seller_utility": 0.5684598088264465,
+        "joint_surplus": 1.2407531142234802,
+        "max_joint_surplus": 1.581635057926178,
+        "pareto_efficiency": 0.7844749697508233,
+        "buyer_surplus_share": 0.5418429320790265,
+        "deal_proposal": [
+          0.3700000047683716,
+          0.7400000095367432,
+          0.7300000190734863,
+          0.30000001192092896,
+          0.7200000286102295
+        ],
+        "optimal_proposal": [
+          1.0,
+          1.0,
+          1.0,
+          0.0,
+          1.0
+        ],
+        "rounds": 7,
+        "turns": [
+          {
+            "role": "seller",
+            "action": "offer",
+            "proposal": [
+              0.550000011920929,
+              0.30000001192092896,
+              0.800000011920929,
+              0.25,
+              0.20000000298023224
+            ],
+            "reasoning": "As the seller, I want to start with a proposal that emphasizes high payment terms and a moderate price, while keeping contract length and SLA tier relatively low. This aligns with my preference for fast payment and minimal long-term commitments.",
+            "had_briefing": false
+          },
+          {
+            "role": "buyer",
+            "action": "offer",
+            "proposal": [
+              0.3100000023841858,
+              0.6499999761581421,
+              0.7300000190734863,
+              0.25,
+              0.6200000047683716
+            ],
+            "reasoning": "The seller's initial proposal is below my target utility. I'll counter with the model-recommended proposal that strongly emphasizes my key priorities of low price, long contract, and high data rights. The payment terms and SLA are also strategically positioned to maximize my advantage.",
+            "had_briefing": true
+          },
+          {
+            "role": "seller",
+            "action": "offer",
+            "proposal": [
+              0.44999998807907104,
+              0.5,
+              0.75,
+              0.25,
+              0.30000001192092896
+            ],
+            "reasoning": "The buyer's proposal reduces my price significantly and increases contract length and data rights, which hurts my utility. However, the payment terms are still favorable. I'll make a counter-proposal that nudges variables back in my direction, especially price and data rights.",
+            "had_briefing": false
+          },
+          {
+            "role": "buyer",
+            "action": "offer",
+            "proposal": [
+              0.33000001311302185,
+              0.7699999809265137,
+              0.75,
+              0.27000001072883606,
+              0.75
+            ],
+            "reasoning": "The seller's latest proposal has regressed on data rights and contract length, which are my top priorities. The model suggests a strong counter that pushes for better terms, especially in data rights and contract commitment. I'll leverage our previous negotiation momentum.",
+            "had_briefing": true
+          },
+          {
+            "role": "seller",
+            "action": "offer",
+            "proposal": [
+              0.3799999952316284,
+              0.6000000238418579,
+              0.75,
+              0.27000001072883606,
+              0.4000000059604645
+            ],
+            "reasoning": "The buyer's proposal has some concerning elements. They've increased contract length and data rights significantly, which reduces my utility. While the current utility of 0.567 is positive, I can try to negotiate slightly better terms. I'll push back on contract length and data rights while keeping other variables close to their current levels.",
+            "had_briefing": false
+          },
+          {
+            "role": "buyer",
+            "action": "offer",
+            "proposal": [
+              0.3499999940395355,
+              0.7400000095367432,
+              0.7300000190734863,
+              0.30000001192092896,
+              0.7200000286102295
+            ],
+            "reasoning": "The seller's latest proposal has reduced our data rights and contract length, which are my top priorities. The model recommends a strategic counter that pushes back on those dimensions while making a small concession on price. We're getting close to the deadline, so this needs to be a balanced move.",
+            "had_briefing": true
+          },
+          {
+            "role": "seller",
+            "action": "offer",
+            "proposal": [
+              0.3700000047683716,
+              0.7400000095367432,
+              0.7300000190734863,
+              0.30000001192092896,
+              0.7200000286102295
+            ],
+            "reasoning": "The buyer's latest proposal gives me a very solid utility of 0.562, which is significantly better than a no-deal outcome of 0. With only two rounds left, this is a strong offer that meets most of my key priorities. The price is slightly lower than my last proposal, but the payment terms, contract length, and data rights are quite favorable.",
+            "had_briefing": false
+          },
+          {
+            "role": "buyer",
+            "action": "accept",
+            "proposal": null,
+            "reasoning": "[Final-round auto-accept: utility 0.672 > 0.15]",
+            "had_briefing": false
+          }
+        ],
+        "buyer_weights": [
+          0.24667627579875073,
+          0.2870919381837998,
+          0.009808550437819615,
+          0.06389002194196446,
+          0.3925332136376654
+        ],
+        "seller_weights": [
+          0.3046940427970929,
+          0.06223679457980183,
+          0.38031417091862896,
+          0.21700165069410507,
+          0.03575334101037116
+        ]
+      },
+      {
+        "deal": true,
+        "buyer_utility": 0.5387040376663208,
+        "seller_utility": 0.5115871429443359,
+        "joint_surplus": 1.0502911806106567,
+        "max_joint_surplus": 1.3458774089813232,
+        "pareto_efficiency": 0.7803765585199979,
+        "buyer_surplus_share": 0.5129092270898717,
+        "deal_proposal": [
+          0.5600000023841858,
+          0.7200000286102295,
+          0.6399999856948853,
+          0.41999998688697815,
+          0.6600000262260437
+        ],
+        "optimal_proposal": [
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          0.0
+        ],
+        "rounds": 7,
+        "turns": [
+          {
+            "role": "seller",
+            "action": "offer",
+            "proposal": [
+              0.75,
+              0.20000000298023224,
+              0.8999999761581421,
+              0.25,
+              0.10000000149011612
+            ],
+            "reasoning": "I want to start with a proposal that signals my preference for a higher price and vendor-friendly terms. I'll aim for a moderately high price, short contract, quick payment, basic SLA, and vendor data ownership.",
+            "had_briefing": false
+          },
+          {
+            "role": "buyer",
+            "action": "offer",
+            "proposal": [
+              0.33000001311302185,
+              0.6299999952316284,
+              0.47999998927116394,
+              0.38999998569488525,
+              0.5099999904632568
+            ],
+            "reasoning": "The seller's initial offer is quite unfavorable. Their high price and payment terms, low contract length, and minimal data rights work against my interests. The computed optimal proposal provides a strategic balance that addresses my key priorities, particularly pushing for longer contract length and better data rights while reducing price.",
+            "had_briefing": true
+          },
+          {
+            "role": "seller",
+            "action": "offer",
+            "proposal": [
+              0.6200000047683716,
+              0.550000011920929,
+              0.75,
+              0.3499999940395355,
+              0.3499999940395355
+            ],
+            "reasoning": "The buyer's proposal reduces my price significantly from 0.75 to 0.33, which hurts my primary goal. However, they've improved contract length and data rights in ways that partially offset this. My utility is 0.419, which is positive but lower than ideal. I'll counter-propose to push price back up and maintain favorable payment terms.",
+            "had_briefing": false
+          },
+          {
+            "role": "buyer",
+            "action": "offer",
+            "proposal": [
+              0.5299999713897705,
+              0.7699999809265137,
+              0.6000000238418579,
+              0.4099999964237213,
+              0.7400000095367432
+            ],
+            "reasoning": "The seller's latest proposal is improving but still doesn't fully meet our priorities. The computed model proposal looks strategic, pushing for better contract length, data rights, and a moderate price increase. We want to signal willingness to compromise while still anchoring to our key preferences.",
+            "had_briefing": true
+          },
+          {
+            "role": "seller",
+            "action": "offer",
+            "proposal": [
+              0.5799999833106995,
+              0.6499999761581421,
+              0.699999988079071,
+              0.3799999952316284,
+              0.44999998807907104
+            ],
+            "reasoning": "The buyer's proposal has some concerning elements. The contract length and data rights are higher than I prefer, while the price has dropped. I need to push back on those variables while maintaining a constructive negotiation stance. I'll make a slight adjustment that nudges the deal closer to my preferences.",
+            "had_briefing": false
+          },
+          {
+            "role": "buyer",
+            "action": "offer",
+            "proposal": [
+              0.5400000214576721,
+              0.7300000190734863,
+              0.6200000047683716,
+              0.4399999976158142,
+              0.6800000071525574
+            ],
+            "reasoning": "The seller's latest proposal is close to our optimal proposal, but slightly less favorable. We have three rounds left, so we should make a strategic counter that nudges the variables closer to our target. The current offer gives 0.462 utility, and our model suggests we can improve to 0.558.",
+            "had_briefing": true
+          },
+          {
+            "role": "seller",
+            "action": "offer",
+            "proposal": [
+              0.5600000023841858,
+              0.7200000286102295,
+              0.6399999856948853,
+              0.41999998688697815,
+              0.6600000262260437
+            ],
+            "reasoning": "The buyer's latest proposal gives me a solid 0.492 utility, which is significantly better than the 0.000 I'd get with no deal. With only two rounds left and a strong likelihood of negotiation deadlock, this looks like a very reasonable offer. The price is slightly lower than my last proposal, but the contract length, payment terms, and data rights are quite favorable.",
+            "had_briefing": false
+          },
+          {
+            "role": "buyer",
+            "action": "accept",
+            "proposal": null,
+            "reasoning": "[Final-round auto-accept: utility 0.539 > 0.15]",
+            "had_briefing": false
+          }
+        ],
+        "buyer_weights": [
+          0.1992490797422365,
+          0.24661744696775853,
+          0.07782748326527189,
+          0.2871248942910818,
+          0.18918109573365127
+        ],
+        "seller_weights": [
+          0.4967803459779171,
+          0.05491794483420699,
+          0.11227756930556315,
+          0.13294702249202422,
+          0.20307711739028864
+        ]
+      },
+      {
+        "deal": true,
+        "buyer_utility": 0.5715808868408203,
+        "seller_utility": 0.5699423551559448,
+        "joint_surplus": 1.1415232419967651,
+        "max_joint_surplus": 1.6355251669883728,
+        "pareto_efficiency": 0.6979551675739395,
+        "buyer_surplus_share": 0.5007176952796902,
+        "deal_proposal": [
+          0.4300000071525574,
+          0.30000001192092896,
+          0.550000011920929,
+          0.550000011920929,
+          0.699999988079071
+        ],
+        "optimal_proposal": [
+          0.0,
+          0.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "rounds": 7,
+        "turns": [
+          {
+            "role": "seller",
+            "action": "offer",
+            "proposal": [
+              0.6000000238418579,
+              0.30000001192092896,
+              0.800000011920929,
+              0.4000000059604645,
+              0.20000000298023224
+            ],
+            "reasoning": "As the seller, I want to start with a proposal that signals my preference for higher payment terms and shorter contract length, while keeping price and other variables moderate. This will give me room to negotiate and show I'm reasonable.",
+            "had_briefing": false
+          },
+          {
+            "role": "buyer",
+            "action": "offer",
+            "proposal": [
+              0.3499999940395355,
+              0.38999998569488525,
+              0.550000011920929,
+              0.4699999988079071,
+              0.550000011920929
+            ],
+            "reasoning": "The seller's initial offer is not optimal for me. I'll counter with the model-recommended proposal that balances my key priorities, especially focusing on getting a higher data rights percentage and lower price. The SLA tier is also critical for me, so I'll aim to improve that as well.",
+            "had_briefing": true
+          },
+          {
+            "role": "seller",
+            "action": "offer",
+            "proposal": [
+              0.5,
+              0.3499999940395355,
+              0.699999988079071,
+              0.44999998807907104,
+              0.25
+            ],
+            "reasoning": "The buyer's proposal has reduced my utility from my initial offer. While the payment terms and SLA tier are closer to my preferences, the price drop and increased data rights are concerning. I need to push back strategically, especially on price and data rights.",
+            "had_briefing": false
+          },
+          {
+            "role": "buyer",
+            "action": "offer",
+            "proposal": [
+              0.3100000023841858,
+              0.3400000035762787,
+              0.4000000059604645,
+              0.5,
+              0.5
+            ],
+            "reasoning": "The seller's latest proposal is slightly worse than our previous round. The computed optimal proposal gives us a higher expected utility by pushing down price and payment terms while maintaining strong SLA and data rights. We'll stick close to the model's recommendation to maximize our negotiation leverage.",
+            "had_briefing": true
+          },
+          {
+            "role": "seller",
+            "action": "offer",
+            "proposal": [
+              0.4000000059604645,
+              0.3400000035762787,
+              0.6000000238418579,
+              0.5,
+              0.5
+            ],
+            "reasoning": "The buyer's latest proposal has lowered price and payment terms, which are my key priorities. While the utility of 0.497 is tempting, I still have room to negotiate. I'll push back slightly on price and payment terms to improve my position, but not so aggressively that I risk losing the deal.",
+            "had_briefing": false
+          },
+          {
+            "role": "buyer",
+            "action": "offer",
+            "proposal": [
+              0.4099999964237213,
+              0.30000001192092896,
+              0.550000011920929,
+              0.550000011920929,
+              0.7300000190734863
+            ],
+            "reasoning": "The seller's latest proposal gives me 0.502 utility, which is quite good. However, my model suggests I can push for slightly better terms, especially on data rights. I'll make a strategic counter that's close to the recommended proposal, showing I'm reasonable but still seeking optimization.",
+            "had_briefing": true
+          },
+          {
+            "role": "seller",
+            "action": "offer",
+            "proposal": [
+              0.4300000071525574,
+              0.30000001192092896,
+              0.550000011920929,
+              0.550000011920929,
+              0.699999988079071
+            ],
+            "reasoning": "The buyer's proposal gives me a solid 0.566 utility, which is significantly better than the 0.000 I'd get with no deal. With only two rounds left, this looks like a very attractive offer. The data rights are higher than I prefer, but the other terms are reasonable, especially the payment terms and contract length.",
+            "had_briefing": false
+          },
+          {
+            "role": "buyer",
+            "action": "accept",
+            "proposal": null,
+            "reasoning": "[Final-round auto-accept: utility 0.572 > 0.15]",
+            "had_briefing": false
+          }
+        ],
+        "buyer_weights": [
+          0.15771967730754596,
+          0.05335683813550993,
+          0.052254710957051656,
+          0.49006074384060405,
+          0.24660802975928836
+        ],
+        "seller_weights": [
+          0.13198873661407498,
+          0.37125405173609327,
+          0.3698826645888563,
+          0.07874356419121625,
+          0.048130982869759184
+        ]
+      },
+      {
+        "deal": true,
+        "buyer_utility": 0.6034013032913208,
+        "seller_utility": 0.41114842891693115,
+        "joint_surplus": 1.014549732208252,
+        "max_joint_surplus": 1.135693073272705,
+        "pareto_efficiency": 0.8933309149140475,
+        "buyer_surplus_share": 0.5947478808929038,
+        "deal_proposal": [
+          0.6800000071525574,
+          0.46000000834465027,
+          0.2800000011920929,
+          0.36000001430511475,
+          0.49000000953674316
+        ],
+        "optimal_proposal": [
+          1.0,
+          1.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        "rounds": 7,
+        "turns": [
+          {
+            "role": "seller",
+            "action": "offer",
+            "proposal": [
+              0.550000011920929,
+              0.30000001192092896,
+              0.8500000238418579,
+              0.25,
+              0.20000000298023224
+            ],
+            "reasoning": "I want to start with a proposal that signals my priorities: high payment terms, moderate price, and keeping data rights and SLA low. This will give me flexibility while showing I'm serious about getting good payment conditions.",
+            "had_briefing": false
+          },
+          {
+            "role": "buyer",
+            "action": "offer",
+            "proposal": [
+              0.49000000953674316,
+              0.5,
+              0.25,
+              0.3100000023841858,
+              0.3799999952316284
+            ],
+            "reasoning": "The seller's initial proposal is quite unfavorable, especially with high payment terms and low contract length and data rights. I'll counter with the model-recommended proposal that significantly improves my position, particularly on payment terms and contract length.",
+            "had_briefing": true
+          },
+          {
+            "role": "seller",
+            "action": "offer",
+            "proposal": [
+              0.5,
+              0.4000000059604645,
+              0.6499999761581421,
+              0.2800000011920929,
+              0.30000001192092896
+            ],
+            "reasoning": "The buyer's proposal reduces my preferred payment terms significantly from 0.85 to 0.25, which is my highest priority variable. While the price is lower than my initial offer, the payment terms are a critical concern. I need to push back and maintain high payment terms while making some concessions on other variables.",
+            "had_briefing": false
+          },
+          {
+            "role": "buyer",
+            "action": "offer",
+            "proposal": [
+              0.699999988079071,
+              0.550000011920929,
+              0.23000000417232513,
+              0.3400000035762787,
+              0.5699999928474426
+            ],
+            "reasoning": "The model suggests a more aggressive proposal that pushes our priorities. We want to improve payment terms and data rights while maintaining a competitive price and SLA tier. The seller's last offer was moderate, so we can make a bold move to shift negotiation dynamics.",
+            "had_briefing": true
+          },
+          {
+            "role": "seller",
+            "action": "offer",
+            "proposal": [
+              0.6499999761581421,
+              0.5,
+              0.44999998807907104,
+              0.3199999928474426,
+              0.4000000059604645
+            ],
+            "reasoning": "The buyer's latest proposal increases price and contract length, which is somewhat favorable. However, they've dramatically reduced payment terms, which is my highest priority. I need to push back on payment terms while maintaining a reasonable stance on other variables.",
+            "had_briefing": false
+          },
+          {
+            "role": "buyer",
+            "action": "offer",
+            "proposal": [
+              0.6700000166893005,
+              0.4699999988079071,
+              0.25999999046325684,
+              0.3700000047683716,
+              0.5099999904632568
+            ],
+            "reasoning": "The seller's latest proposal is slightly worse than our optimal proposal. We're getting close to the deadline, so we need to make a strategic move that signals willingness to close while still pushing for our preferred terms. The model's recommendation looks solid and balanced.",
+            "had_briefing": true
+          },
+          {
+            "role": "seller",
+            "action": "offer",
+            "proposal": [
+              0.6800000071525574,
+              0.46000000834465027,
+              0.2800000011920929,
+              0.36000001430511475,
+              0.49000000953674316
+            ],
+            "reasoning": "The buyer's latest proposal gives me a utility of 0.394, which is significantly better than a no-deal outcome of 0. With only two rounds left, this is a very attractive offer. The price is close to my desired high value, payment terms are lower than I want but still acceptable, and the other terms are reasonable compromises.",
+            "had_briefing": false
+          },
+          {
+            "role": "buyer",
+            "action": "accept",
+            "proposal": null,
+            "reasoning": "[Final-round auto-accept: utility 0.603 > 0.15]",
+            "had_briefing": false
+          }
+        ],
+        "buyer_weights": [
+          0.06093961477155071,
+          0.09865929176158866,
+          0.6272387277339396,
+          0.13495486453545616,
+          0.07820750119746489
+        ],
+        "seller_weights": [
+          0.16048480211021326,
+          0.056416929535101204,
+          0.5965641034443813,
+          0.07217878585753885,
+          0.11435537905276559
+        ]
+      },
+      {
+        "deal": true,
+        "buyer_utility": 0.6488379240036011,
+        "seller_utility": 0.4187135696411133,
+        "joint_surplus": 1.0675514936447144,
+        "max_joint_surplus": 1.6038541793823242,
+        "pareto_efficiency": 0.6656163056268928,
+        "buyer_surplus_share": 0.6077813837236193,
+        "deal_proposal": [
+          0.7099999785423279,
+          0.4699999988079071,
+          0.28999999165534973,
+          0.36000001430511475,
+          0.6700000166893005
+        ],
+        "optimal_proposal": [
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "rounds": 7,
+        "turns": [
+          {
+            "role": "buyer",
+            "action": "offer",
+            "proposal": [
+              0.6800000071525574,
+              0.6399999856948853,
+              0.25999999046325684,
+              0.20999999344348907,
+              0.6100000143051147
+            ],
+            "reasoning": "I'll lead with a strong proposal that reflects our strategic priorities. The model suggests a balanced approach that secures favorable terms, especially around payment and data rights. We want to signal we're serious negotiators but open to collaboration.",
+            "had_briefing": true
+          },
+          {
+            "role": "seller",
+            "action": "offer",
+            "proposal": [
+              0.699999988079071,
+              0.5,
+              0.4000000059604645,
+              0.15000000596046448,
+              0.4000000059604645
+            ],
+            "reasoning": "The buyer's initial proposal is quite favorable to them. I want to push back on contract length, data rights, and SLA tier. These are areas where I can extract more value for my company. The price is already higher than I'd prefer, so I'll be strategic about my counter.",
+            "had_briefing": false
+          },
+          {
+            "role": "buyer",
+            "action": "offer",
+            "proposal": [
+              0.6200000047683716,
+              0.47999998927116394,
+              0.2800000011920929,
+              0.25,
+              0.5199999809265137
+            ],
+            "reasoning": "The seller's latest proposal slightly improves payment terms but reduces contract length and data rights. Our model suggests a counter that protects our key priorities, especially slow payment and data ownership. We'll nudge price down and strategically adjust other variables.",
+            "had_briefing": true
+          },
+          {
+            "role": "seller",
+            "action": "offer",
+            "proposal": [
+              0.6800000071525574,
+              0.4699999988079071,
+              0.30000001192092896,
+              0.20000000298023224,
+              0.44999998807907104
+            ],
+            "reasoning": "The buyer's latest proposal has slightly reduced my utility from my previous offer. While the price and contract length have decreased, they've marginally improved the SLA tier and data rights. I want to push back on price and maintain my preference for lower data rights and SLA tier.",
+            "had_briefing": false
+          },
+          {
+            "role": "buyer",
+            "action": "offer",
+            "proposal": [
+              0.699999988079071,
+              0.41999998688697815,
+              0.25,
+              0.30000001192092896,
+              0.5899999737739563
+            ],
+            "reasoning": "The model suggests a more aggressive proposal to push back on the seller's terms. I'll slightly moderate the recommendation to maintain negotiation momentum. The key is to improve payment terms and data rights while being strategic about price and contract length.",
+            "had_briefing": true
+          },
+          {
+            "role": "seller",
+            "action": "offer",
+            "proposal": [
+              0.7200000286102295,
+              0.4000000059604645,
+              0.25,
+              0.25,
+              0.550000011920929
+            ],
+            "reasoning": "The buyer's latest proposal gives me 0.490 utility, which is quite good. With only 3 rounds left, I should be cautious about pushing too hard. The data rights are closer to my preference, and the price is slightly higher. I'll make a minor adjustment to improve my position slightly.",
+            "had_briefing": false
+          },
+          {
+            "role": "buyer",
+            "action": "offer",
+            "proposal": [
+              0.7099999785423279,
+              0.4699999988079071,
+              0.28999999165534973,
+              0.36000001430511475,
+              0.6700000166893005
+            ],
+            "reasoning": "We're in the final stretch with only two rounds left. The seller's last proposal gives me 0.632 utility, which is quite good. My model suggests a slight improvement, but I need to be careful not to risk losing the deal. The computed proposal looks strategic, slightly nudging parameters in my favor.",
+            "had_briefing": true
+          },
+          {
+            "role": "seller",
+            "action": "accept",
+            "proposal": null,
+            "reasoning": "[Final-round auto-accept: utility 0.419 > 0.15]",
+            "had_briefing": false
+          }
+        ],
+        "buyer_weights": [
+          0.026235230463263363,
+          0.12171144447896227,
+          0.5884278098255621,
+          0.03350814823983734,
+          0.2301173669923748
+        ],
+        "seller_weights": [
+          0.02075328051970408,
+          0.11105819051637619,
+          0.0007088541651738602,
+          0.1891744250008599,
+          0.678305249797886
+        ]
+      },
+      {
+        "deal": true,
+        "buyer_utility": 0.6541496515274048,
+        "seller_utility": 0.41587966680526733,
+        "joint_surplus": 1.0700293183326721,
+        "max_joint_surplus": 1.244856059551239,
+        "pareto_efficiency": 0.8595606778171682,
+        "buyer_surplus_share": 0.6113380636585788,
+        "deal_proposal": [
+          0.7300000190734863,
+          0.7099999785423279,
+          0.38999998569488525,
+          0.4300000071525574,
+          0.6899999976158142
+        ],
+        "optimal_proposal": [
+          1.0,
+          1.0,
+          1.0,
+          0.0,
+          1.0
+        ],
+        "rounds": 7,
+        "turns": [
+          {
+            "role": "buyer",
+            "action": "offer",
+            "proposal": [
+              0.8100000023841858,
+              0.7599999904632568,
+              0.49000000953674316,
+              0.28999999165534973,
+              0.6399999856948853
+            ],
+            "reasoning": "I'll lead with a strong proposal that protects my key interests. The model suggests a price near maximum, long contract, moderate payment terms, decent SLA, and strong data rights. This signals I'm serious but willing to negotiate.",
+            "had_briefing": true
+          },
+          {
+            "role": "seller",
+            "action": "offer",
+            "proposal": [
+              0.8100000023841858,
+              0.5,
+              0.75,
+              0.28999999165534973,
+              0.4000000059604645
+            ],
+            "reasoning": "The buyer's initial proposal is quite aggressive. The price is high, which is good, but the contract length is long, payment terms are moderate, SLA tier is low (which I prefer), and data rights are somewhat favorable to the buyer. I'll counter by pushing for faster payment and shorter contract while maintaining the high price.",
+            "had_briefing": false
+          },
+          {
+            "role": "buyer",
+            "action": "offer",
+            "proposal": [
+              0.7799999713897705,
+              0.6100000143051147,
+              0.5400000214576721,
+              0.36000001430511475,
+              0.550000011920929
+            ],
+            "reasoning": "The seller's latest proposal reduced contract length and data rights, which are key priorities for me. My model suggests a balanced counter that nudges those variables back up while slightly reducing price and payment terms. This maintains negotiation momentum without being too aggressive.",
+            "had_briefing": true
+          },
+          {
+            "role": "seller",
+            "action": "offer",
+            "proposal": [
+              0.800000011920929,
+              0.5899999737739563,
+              0.699999988079071,
+              0.33000001311302185,
+              0.44999998807907104
+            ],
+            "reasoning": "The buyer's latest proposal shows some compromise, but it's not quite ideal for me. The price dropped slightly, contract length increased, and payment terms decreased. I want to nudge the variables back in my favor, especially price and payment terms. I'll make a strategic counter that shows I'm willing to negotiate but still prioritize my key interests.",
+            "had_briefing": false
+          },
+          {
+            "role": "buyer",
+            "action": "offer",
+            "proposal": [
+              0.7599999904632568,
+              0.75,
+              0.5099999904632568,
+              0.4300000071525574,
+              0.6299999952316284
+            ],
+            "reasoning": "The seller's latest proposal is close to our utility target, but we can still push for better terms. Our model suggests a proposal that emphasizes longer contract length and stronger data rights, which aligns with our key priorities. We'll make a strategic move to nudge the negotiation in our favor.",
+            "had_briefing": true
+          },
+          {
+            "role": "seller",
+            "action": "offer",
+            "proposal": [
+              0.7799999713897705,
+              0.699999988079071,
+              0.550000011920929,
+              0.4000000059604645,
+              0.6000000238418579
+            ],
+            "reasoning": "The buyer's latest proposal gives me 0.438 utility, which is quite good. We're approaching the deadline, and I don't want to risk losing the entire deal. The contract length and data rights are higher than I prefer, but the overall package is reasonable. I'll make a slight adjustment to improve my position marginally.",
+            "had_briefing": false
+          },
+          {
+            "role": "buyer",
+            "action": "offer",
+            "proposal": [
+              0.7300000190734863,
+              0.7099999785423279,
+              0.38999998569488525,
+              0.4300000071525574,
+              0.6899999976158142
+            ],
+            "reasoning": "We're in the final stretch. The seller's last proposal gives me 0.604 utility, which is very close to our model's optimal proposal of 0.653. We have two options: slightly adjust our proposal or consider accepting. Given the deadline warning and the solid utility, acceptance looks attractive.",
+            "had_briefing": true
+          },
+          {
+            "role": "seller",
+            "action": "accept",
+            "proposal": null,
+            "reasoning": "[Final-round auto-accept: utility 0.416 > 0.15]",
+            "had_briefing": false
+          }
+        ],
+        "buyer_weights": [
+          0.0013143245378786895,
+          0.4715059842524712,
+          0.09122778768121712,
+          0.143962082723582,
+          0.2919898208048509
+        ],
+        "seller_weights": [
+          0.1236919682706986,
+          0.3378035359925324,
+          0.17949240437661837,
+          0.17817586755392,
+          0.18083622380623063
+        ]
+      },
+      {
+        "deal": true,
+        "buyer_utility": 0.6399677991867065,
+        "seller_utility": 0.43274831771850586,
+        "joint_surplus": 1.0727161169052124,
+        "max_joint_surplus": 1.470015525817871,
+        "pareto_efficiency": 0.7297311477770865,
+        "buyer_surplus_share": 0.5965863559811282,
+        "deal_proposal": [
+          0.699999988079071,
+          0.6850000023841858,
+          0.25999999046325684,
+          0.3199999928474426,
+          0.6299999952316284
+        ],
+        "optimal_proposal": [
+          1.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "rounds": 7,
+        "turns": [
+          {
+            "role": "seller",
+            "action": "offer",
+            "proposal": [
+              0.6000000238418579,
+              0.30000001192092896,
+              0.800000011920929,
+              0.20000000298023224,
+              0.10000000149011612
+            ],
+            "reasoning": "I want to start with a proposal that signals my preference for vendor-friendly terms, especially around data rights and contract flexibility. I'll aim for a moderate price point that leaves room for negotiation.",
+            "had_briefing": false
+          },
+          {
+            "role": "buyer",
+            "action": "offer",
+            "proposal": [
+              0.5,
+              0.699999988079071,
+              0.3100000023841858,
+              0.27000001072883606,
+              0.46000000834465027
+            ],
+            "reasoning": "The seller's initial offer is weak for my priorities. I'll counter with a proposal that strongly emphasizes longer contract length and better data rights, while keeping price and SLA moderate. The computed model proposal looks strategically sound.",
+            "had_briefing": true
+          },
+          {
+            "role": "seller",
+            "action": "offer",
+            "proposal": [
+              0.550000011920929,
+              0.5,
+              0.6000000238418579,
+              0.25,
+              0.30000001192092896
+            ],
+            "reasoning": "The buyer's proposal has some concerning elements. The contract length is higher than I want, and the payment terms are much lower. However, the utility of 0.505 is positive. I'll make a slight adjustment to nudge the terms more in my favor, focusing on reducing contract length and improving payment terms.",
+            "had_briefing": false
+          },
+          {
+            "role": "buyer",
+            "action": "offer",
+            "proposal": [
+              0.7200000286102295,
+              0.7599999904632568,
+              0.2800000011920929,
+              0.3100000023841858,
+              0.7400000095367432
+            ],
+            "reasoning": "The model suggests a strong proposal that pushes our priorities. We want a longer contract, better data rights, and lower price. The seller's last offer was less favorable, so we'll use the recommended target to create negotiation pressure.",
+            "had_briefing": true
+          },
+          {
+            "role": "seller",
+            "action": "offer",
+            "proposal": [
+              0.7200000286102295,
+              0.6000000238418579,
+              0.2800000011920929,
+              0.25,
+              0.4000000059604645
+            ],
+            "reasoning": "The buyer's latest proposal is pushing hard on contract length and data rights, which are my most sensitive variables. While the utility of 0.364 is positive, I want to negotiate down the contract length and data rights. The price is higher than I'd like, but I can potentially trade that for more favorable terms in other areas.",
+            "had_briefing": false
+          },
+          {
+            "role": "buyer",
+            "action": "offer",
+            "proposal": [
+              0.6800000071525574,
+              0.6899999976158142,
+              0.25999999046325684,
+              0.3199999928474426,
+              0.6600000262260437
+            ],
+            "reasoning": "The seller's latest proposal is slightly worse than our optimal proposal. We're close to a deal, but can still nudge the variables to improve our utility. We'll make a small adjustment that maintains our key priorities of high contract length and data rights.",
+            "had_briefing": true
+          },
+          {
+            "role": "seller",
+            "action": "offer",
+            "proposal": [
+              0.699999988079071,
+              0.6850000023841858,
+              0.25999999046325684,
+              0.3199999928474426,
+              0.6299999952316284
+            ],
+            "reasoning": "The buyer's latest proposal gives me a utility of 0.415, which is significantly better than a no-deal outcome of 0.000. With only two rounds left, I should seriously consider accepting. The proposal is close to my preferences, especially on data rights and contract length. Pushing further might risk losing everything.",
+            "had_briefing": false
+          },
+          {
+            "role": "buyer",
+            "action": "accept",
+            "proposal": null,
+            "reasoning": "[Final-round auto-accept: utility 0.640 > 0.15]",
+            "had_briefing": false
+          }
+        ],
+        "buyer_weights": [
+          0.05756971753944832,
+          0.4556860687756571,
+          0.26867201547897623,
+          0.08274479854571426,
+          0.13532739966020413
+        ],
+        "seller_weights": [
+          0.09030859129893844,
+          0.23110787626295887,
+          0.023234682904853688,
+          0.15552652921240967,
+          0.4998223203208392
+        ]
+      },
+      {
+        "deal": true,
+        "buyer_utility": 0.5822271704673767,
+        "seller_utility": 0.5793269872665405,
+        "joint_surplus": 1.1615541577339172,
+        "max_joint_surplus": 1.7777013778686523,
+        "pareto_efficiency": 0.6534022936554984,
+        "buyer_surplus_share": 0.5012484063620822,
+        "deal_proposal": [
+          0.3499999940395355,
+          0.3499999940395355,
+          0.4000000059604645,
+          0.25,
+          0.6000000238418579
+        ],
+        "optimal_proposal": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "rounds": 7,
+        "turns": [
+          {
+            "role": "seller",
+            "action": "offer",
+            "proposal": [
+              0.8500000238418579,
+              0.75,
+              0.20000000298023224,
+              0.25,
+              0.10000000149011612
+            ],
+            "reasoning": "As the seller, I want to start with a proposal that protects my key interests. I'll aim high on price and contract length, while keeping SLA tier low. This gives me room to negotiate and signals confidence.",
+            "had_briefing": false
+          },
+          {
+            "role": "buyer",
+            "action": "offer",
+            "proposal": [
+              0.4000000059604645,
+              0.27000001072883606,
+              0.28999999165534973,
+              0.25,
+              0.6399999856948853
+            ],
+            "reasoning": "The seller's initial offer is quite aggressive, especially on price and contract length. Our model suggests a counter that dramatically reduces price, secures strong data rights, and provides some flexibility on contract terms. This proposal protects our key priorities while signaling we're serious negotiators.",
+            "had_briefing": true
+          },
+          {
+            "role": "seller",
+            "action": "offer",
+            "proposal": [
+              0.6499999761581421,
+              0.5,
+              0.28999999165534973,
+              0.25,
+              0.30000001192092896
+            ],
+            "reasoning": "The buyer's proposal significantly reduces price and contract length, which are my most important variables. While they've improved data rights in their favor, the overall utility is still quite good for me. However, I should try to nudge the price and contract length closer to my initial preferences.",
+            "had_briefing": false
+          },
+          {
+            "role": "buyer",
+            "action": "offer",
+            "proposal": [
+              0.3400000035762787,
+              0.6700000166893005,
+              0.5,
+              0.27000001072883606,
+              0.7699999809265137
+            ],
+            "reasoning": "The seller's latest proposal is moving closer to our interests, but we still need to push for better terms. Our model suggests a proposal that maximizes our utility by lowering price, extending contract length, improving payment terms, and securing stronger data rights.",
+            "had_briefing": true
+          },
+          {
+            "role": "seller",
+            "action": "offer",
+            "proposal": [
+              0.5,
+              0.6000000238418579,
+              0.4000000059604645,
+              0.25,
+              0.4000000059604645
+            ],
+            "reasoning": "The buyer's latest proposal is moving away from my preferences, especially on price and data rights. While the utility of 0.420 is positive, I want to push back and reclaim some ground. I'll make a strategic counter that nudges variables closer to my ideal state.",
+            "had_briefing": false
+          },
+          {
+            "role": "buyer",
+            "action": "offer",
+            "proposal": [
+              0.2800000011920929,
+              0.28999999165534973,
+              0.4000000059604645,
+              0.28999999165534973,
+              0.7400000095367432
+            ],
+            "reasoning": "The seller's latest proposal has improved, giving me 0.476 utility. However, the computed optimal proposal suggests I can still push for better terms, especially on price and data rights. With only 3 rounds left, I need to be strategic but not overly aggressive.",
+            "had_briefing": true
+          },
+          {
+            "role": "seller",
+            "action": "offer",
+            "proposal": [
+              0.3499999940395355,
+              0.3499999940395355,
+              0.4000000059604645,
+              0.25,
+              0.6000000238418579
+            ],
+            "reasoning": "The buyer's latest proposal gives me a utility of 0.579, which is significantly better than a no-deal outcome of 0.000. With only two rounds left, this is a very attractive offer. While I'd prefer a higher price and shorter contract, the data rights concession is favorable. The risk of negotiating further and potentially losing the deal outweighs potential marginal improvements.",
+            "had_briefing": false
+          },
+          {
+            "role": "buyer",
+            "action": "accept",
+            "proposal": null,
+            "reasoning": "[Final-round auto-accept: utility 0.582 > 0.15]",
+            "had_briefing": false
+          }
+        ],
+        "buyer_weights": [
+          0.10788716281443352,
+          0.014189256794576366,
+          0.3518494310570955,
+          0.056056891303077463,
+          0.4700172580308172
+        ],
+        "seller_weights": [
+          0.26787957926943284,
+          0.48063309996457704,
+          0.03160124878431308,
+          0.20732199153797337,
+          0.012564080443703636
+        ]
+      },
+      {
+        "deal": true,
+        "buyer_utility": 0.5723921060562134,
+        "seller_utility": 0.39599090814590454,
+        "joint_surplus": 0.9683830142021179,
+        "max_joint_surplus": 1.3419703841209412,
+        "pareto_efficiency": 0.7216128058119986,
+        "buyer_surplus_share": 0.591080282968228,
+        "deal_proposal": [
+          0.47999998927116394,
+          0.550000011920929,
+          0.3499999940395355,
+          0.25,
+          0.6000000238418579
+        ],
+        "optimal_proposal": [
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "rounds": 7,
+        "turns": [
+          {
+            "role": "seller",
+            "action": "offer",
+            "proposal": [
+              0.6499999761581421,
+              0.30000001192092896,
+              0.8999999761581421,
+              0.20000000298023224,
+              0.10000000149011612
+            ],
+            "reasoning": "I want to start with a proposal that signals my preference for high payment terms and a moderate price. This will give me room to negotiate while showing I'm serious about getting value.",
+            "had_briefing": false
+          },
+          {
+            "role": "buyer",
+            "action": "offer",
+            "proposal": [
+              0.3199999928474426,
+              0.5600000023841858,
+              0.3199999928474426,
+              0.23999999463558197,
+              0.5899999737739563
+            ],
+            "reasoning": "The seller's initial proposal is quite unfavorable. Their high payment terms and low price, contract length, SLA, and data rights work against my priorities. I'll counter with the model's recommended proposal that strongly emphasizes my key interests: low price, high contract length, client data rights, and better payment terms.",
+            "had_briefing": true
+          },
+          {
+            "role": "seller",
+            "action": "offer",
+            "proposal": [
+              0.550000011920929,
+              0.4000000059604645,
+              0.75,
+              0.2199999988079071,
+              0.25
+            ],
+            "reasoning": "The buyer's proposal is significantly worse for me across multiple dimensions. Their price is much lower, payment terms are dramatically reduced, and they want more data rights. I need to push back strategically, prioritizing payment terms and price while conceding slightly on other variables.",
+            "had_briefing": false
+          },
+          {
+            "role": "buyer",
+            "action": "offer",
+            "proposal": [
+              0.4399999976158142,
+              0.6000000238418579,
+              0.30000001192092896,
+              0.25999999046325684,
+              0.7599999904632568
+            ],
+            "reasoning": "The seller's latest proposal has moved closer to my interests, but still doesn't fully capture my priorities. The computed model suggests a strategic counter that pushes for better data rights and a more favorable contract length while making moderate concessions on price.",
+            "had_briefing": true
+          },
+          {
+            "role": "seller",
+            "action": "offer",
+            "proposal": [
+              0.5,
+              0.5,
+              0.6499999761581421,
+              0.2199999988079071,
+              0.3499999940395355
+            ],
+            "reasoning": "The buyer's proposal is moving in a direction that's less favorable to me. They've increased contract length and data rights, which I don't prefer, while dropping payment terms significantly. I need to push back on some key variables to maintain my utility.",
+            "had_briefing": false
+          },
+          {
+            "role": "buyer",
+            "action": "offer",
+            "proposal": [
+              0.4699999988079071,
+              0.5799999833106995,
+              0.2800000011920929,
+              0.28999999165534973,
+              0.7200000286102295
+            ],
+            "reasoning": "The seller's latest offer has improved slightly, but still doesn't fully meet my priorities. I'll counter with the model-recommended proposal that maximizes my utility, focusing on lower payment terms and higher data rights while keeping price and contract length balanced.",
+            "had_briefing": true
+          },
+          {
+            "role": "seller",
+            "action": "offer",
+            "proposal": [
+              0.47999998927116394,
+              0.550000011920929,
+              0.3499999940395355,
+              0.25,
+              0.6000000238418579
+            ],
+            "reasoning": "The utility of 0.338 is quite attractive, especially with only two rounds left. The buyer has moved closer to my preferences on payment terms and SLA tier, though data rights and contract length are still higher than I'd like. However, the risk of getting zero utility is far worse than accepting this reasonable offer.",
+            "had_briefing": false
+          },
+          {
+            "role": "buyer",
+            "action": "accept",
+            "proposal": null,
+            "reasoning": "[Final-round auto-accept: utility 0.572 > 0.15]",
+            "had_briefing": false
+          }
+        ],
+        "buyer_weights": [
+          0.2086464503299595,
+          0.14922913546745667,
+          0.2651972481527359,
+          0.047755870152936565,
+          0.32917129589691135
+        ],
+        "seller_weights": [
+          0.20873986070459524,
+          0.07705068604946956,
+          0.6070741894694341,
+          0.016551116926898216,
+          0.0905841468496028
+        ]
+      },
+      {
+        "deal": true,
+        "buyer_utility": 0.5495542287826538,
+        "seller_utility": 0.5220372676849365,
+        "joint_surplus": 1.0715914964675903,
+        "max_joint_surplus": 1.422342300415039,
+        "pareto_efficiency": 0.7533991614781479,
+        "buyer_surplus_share": 0.512839296125634,
+        "deal_proposal": [
+          0.6600000262260437,
+          0.49000000953674316,
+          0.5799999833106995,
+          0.7200000286102295,
+          0.5400000214576721
+        ],
+        "optimal_proposal": [
+          1.0,
+          0.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "rounds": 7,
+        "turns": [
+          {
+            "role": "buyer",
+            "action": "offer",
+            "proposal": [
+              0.6499999761581421,
+              0.7300000190734863,
+              0.4399999976158142,
+              0.36000001430511475,
+              0.6499999761581421
+            ],
+            "reasoning": "I'll lead with a strong proposal that protects my key priorities. The model suggests a balanced approach that secures long-term contract, good data rights, and a moderate price point. This gives me leverage while showing I'm serious about a mutually beneficial deal.",
+            "had_briefing": true
+          },
+          {
+            "role": "seller",
+            "action": "offer",
+            "proposal": [
+              0.75,
+              0.550000011920929,
+              0.6499999761581421,
+              0.25,
+              0.44999998807907104
+            ],
+            "reasoning": "This initial proposal is not ideal for me. The contract length is quite long, which I don't prefer. The price is moderate, but I want to push it higher. Payment terms and SLA tier are lower than I'd like, which is good. I'll make a counter-proposal that nudges variables in my preferred direction.",
+            "had_briefing": false
+          },
+          {
+            "role": "buyer",
+            "action": "offer",
+            "proposal": [
+              0.5799999833106995,
+              0.550000011920929,
+              0.49000000953674316,
+              0.4300000071525574,
+              0.5600000023841858
+            ],
+            "reasoning": "The seller's latest proposal increased price and payment terms while reducing contract length and data rights. Our model suggests a strategic counter that slightly compromises on contract length but maintains strong data rights and keeps price low. We want to signal willingness to negotiate while protecting our key priorities.",
+            "had_briefing": true
+          },
+          {
+            "role": "seller",
+            "action": "offer",
+            "proposal": [
+              0.6800000071525574,
+              0.550000011920929,
+              0.6000000238418579,
+              0.3799999952316284,
+              0.5
+            ],
+            "reasoning": "The buyer's latest proposal has reduced price and payment terms, which hurts my utility. However, they've improved SLA tier and data rights slightly. I want to push back on price and payment terms while showing some flexibility on other variables. My current utility is 0.495, so I need to be strategic about my counter.",
+            "had_briefing": false
+          },
+          {
+            "role": "buyer",
+            "action": "offer",
+            "proposal": [
+              0.6100000143051147,
+              0.4000000059604645,
+              0.5199999809265137,
+              0.7400000095367432,
+              0.6100000143051147
+            ],
+            "reasoning": "The seller's latest proposal is improving, but still doesn't fully align with my priorities. The computed model suggests a strategic counter that pushes for a higher SLA tier and slightly better data rights while keeping price moderate. I'll aim to signal flexibility while protecting key interests.",
+            "had_briefing": true
+          },
+          {
+            "role": "seller",
+            "action": "offer",
+            "proposal": [
+              0.6299999952316284,
+              0.44999998807907104,
+              0.5400000214576721,
+              0.699999988079071,
+              0.5799999833106995
+            ],
+            "reasoning": "The buyer's latest proposal gives me 0.545 utility, which is quite good. With only 3 rounds left, I need to be careful not to risk losing the deal. The SLA tier is higher than I prefer, and the contract length is lower, but the overall package is solid. I'll make a slight adjustment to nudge the terms slightly more in my favor.",
+            "had_briefing": false
+          },
+          {
+            "role": "buyer",
+            "action": "offer",
+            "proposal": [
+              0.6600000262260437,
+              0.49000000953674316,
+              0.5799999833106995,
+              0.7200000286102295,
+              0.5400000214576721
+            ],
+            "reasoning": "We're very close to a deal. The seller's last proposal gives me 0.551 utility, which is strong. My model suggests a slight adjustment to 0.66/0.49/0.58/0.72/0.54, but the risk of no deal is high. I should make a minor counter and be prepared to accept.",
+            "had_briefing": true
+          },
+          {
+            "role": "seller",
+            "action": "accept",
+            "proposal": null,
+            "reasoning": "[Final-round auto-accept: utility 0.522 > 0.15]",
+            "had_briefing": false
+          }
+        ],
+        "buyer_weights": [
+          0.032851721039695074,
+          0.2860771098505162,
+          0.12541179223486135,
+          0.25265465740909326,
+          0.3030047194658342
+        ],
+        "seller_weights": [
+          0.1889284277339467,
+          0.5107621194467703,
+          0.16699233593867804,
+          0.11847545109986352,
+          0.014841665780741552
+        ]
+      },
+      {
+        "deal": true,
+        "buyer_utility": 0.6020032167434692,
+        "seller_utility": 0.3501388430595398,
+        "joint_surplus": 0.952142059803009,
+        "max_joint_surplus": 1.4147955179214478,
+        "pareto_efficiency": 0.6729891689237553,
+        "buyer_surplus_share": 0.6322619724077929,
+        "deal_proposal": [
+          0.5400000214576721,
+          0.3100000023841858,
+          0.3100000023841858,
+          0.6800000071525574,
+          0.6700000166893005
+        ],
+        "optimal_proposal": [
+          0.0,
+          1.0,
+          1.0,
+          1.0,
+          0.0
+        ],
+        "rounds": 7,
+        "turns": [
+          {
+            "role": "buyer",
+            "action": "offer",
+            "proposal": [
+              0.3400000035762787,
+              0.5199999809265137,
+              0.4000000059604645,
+              0.4300000071525574,
+              0.47999998927116394
+            ],
+            "reasoning": "I'll lead with a balanced proposal that protects my key priorities. The model suggests a moderate price point, a multi-year contract, reasonable payment terms, strong SLA, and good data rights. This gives me flexibility while signaling I'm serious about a fair deal.",
+            "had_briefing": true
+          },
+          {
+            "role": "seller",
+            "action": "offer",
+            "proposal": [
+              0.41999998688697815,
+              0.3799999952316284,
+              0.6000000238418579,
+              0.3799999952316284,
+              0.30000001192092896
+            ],
+            "reasoning": "The buyer's initial proposal is decent but not optimal for me. I want to push for faster payment terms and lower data rights. The contract length is longer than I prefer, so I'll try to negotiate that down. The price is lower than ideal, so I'll nudge that up slightly.",
+            "had_briefing": false
+          },
+          {
+            "role": "buyer",
+            "action": "offer",
+            "proposal": [
+              0.3199999928474426,
+              0.3700000047683716,
+              0.4099999964237213,
+              0.4699999988079071,
+              0.4000000059604645
+            ],
+            "reasoning": "The seller's last proposal slightly increased price and payment terms, which reduces my utility. I'll counter with the model's recommended proposal that emphasizes my priority of high SLA and lower price. The proposal nudges contract length and data rights down while maintaining a strong SLA tier.",
+            "had_briefing": true
+          },
+          {
+            "role": "seller",
+            "action": "offer",
+            "proposal": [
+              0.3799999952316284,
+              0.3700000047683716,
+              0.5,
+              0.4399999976158142,
+              0.3499999940395355
+            ],
+            "reasoning": "The buyer's latest proposal has lowered the price and payment terms, which are critical for my utility. While the current offer gives me 0.482 utility, I want to nudge the variables back towards my preferred state. I'll make a slight adjustment to improve my position, focusing on payment terms and data rights.",
+            "had_briefing": false
+          },
+          {
+            "role": "buyer",
+            "action": "offer",
+            "proposal": [
+              0.46000000834465027,
+              0.3700000047683716,
+              0.27000001072883606,
+              0.6299999952316284,
+              0.5099999904632568
+            ],
+            "reasoning": "The seller's latest proposal gives me 0.486 utility, which is close to but slightly below my target. The computed optimal proposal suggests I should push harder on price and SLA tier while being more flexible on contract length. I'll make a strategic move that signals I'm willing to negotiate but want better terms.",
+            "had_briefing": true
+          },
+          {
+            "role": "seller",
+            "action": "offer",
+            "proposal": [
+              0.46000000834465027,
+              0.3700000047683716,
+              0.4000000059604645,
+              0.550000011920929,
+              0.5099999904632568
+            ],
+            "reasoning": "The buyer's latest offer gives me 0.381 utility, which is positive and quite good. With only 3 rounds left, I'm tempted to accept. However, I can try to nudge a few variables in my favor. I'll focus on improving payment terms and slightly reducing the SLA tier.",
+            "had_briefing": false
+          },
+          {
+            "role": "buyer",
+            "action": "offer",
+            "proposal": [
+              0.5400000214576721,
+              0.3100000023841858,
+              0.3100000023841858,
+              0.6800000071525574,
+              0.6700000166893005
+            ],
+            "reasoning": "We're in the critical final stages. The seller's last proposal gives me 0.542 utility, which is very close to my model's optimal proposal of 0.604. I'll make a slight adjustment to push for better terms, but I'm prepared to accept if this doesn't work.",
+            "had_briefing": true
+          },
+          {
+            "role": "seller",
+            "action": "accept",
+            "proposal": null,
+            "reasoning": "[Final-round auto-accept: utility 0.350 > 0.15]",
+            "had_briefing": false
+          }
+        ],
+        "buyer_weights": [
+          0.26895799883174265,
+          0.052590957473101795,
+          0.1626504619867763,
+          0.41641128528332566,
+          0.09938929642505354
+        ],
+        "seller_weights": [
+          0.1142347683734752,
+          0.016077702036621525,
+          0.3854962603784116,
+          0.19285220629488906,
+          0.2913390629166026
+        ]
+      },
+      {
+        "deal": true,
+        "buyer_utility": 0.6141998171806335,
+        "seller_utility": 0.5640421509742737,
+        "joint_surplus": 1.1782419681549072,
+        "max_joint_surplus": 1.474926233291626,
+        "pareto_efficiency": 0.7988480654557198,
+        "buyer_surplus_share": 0.5212849599496551,
+        "deal_proposal": [
+          0.6299999952316284,
+          0.699999988079071,
+          0.30000001192092896,
+          0.25,
+          0.47999998927116394
+        ],
+        "optimal_proposal": [
+          1.0,
+          1.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "rounds": 7,
+        "turns": [
+          {
+            "role": "seller",
+            "action": "offer",
+            "proposal": [
+              0.75,
+              0.25,
+              0.8999999761581421,
+              0.20000000298023224,
+              0.10000000149011612
+            ],
+            "reasoning": "As the seller, I want to start with a proposal that protects my key interests. I'll aim for a high price, quick payment, low SLA commitment, and vendor-friendly data rights. The contract length can be flexible to appear negotiable.",
+            "had_briefing": false
+          },
+          {
+            "role": "buyer",
+            "action": "offer",
+            "proposal": [
+              0.44999998807907104,
+              0.5699999928474426,
+              0.27000001072883606,
+              0.20999999344348907,
+              0.550000011920929
+            ],
+            "reasoning": "The seller's initial proposal is quite unfavorable. Their high price and payment terms, low contract length, and minimal data rights work against my interests. I'll counter with the model's recommended proposal that balances my key priorities of low price, long contract, slow payment, and strong data rights.",
+            "had_briefing": true
+          },
+          {
+            "role": "seller",
+            "action": "offer",
+            "proposal": [
+              0.6499999761581421,
+              0.4000000059604645,
+              0.75,
+              0.18000000715255737,
+              0.15000000596046448
+            ],
+            "reasoning": "The buyer's proposal reduces my utility compared to my last offer. I want to maintain a high price and fast payment terms while keeping data rights low. Their contract length is longer than I prefer, and the SLA tier is still low. I'll make a strategic counter that nudges variables closer to my preferences.",
+            "had_briefing": false
+          },
+          {
+            "role": "buyer",
+            "action": "offer",
+            "proposal": [
+              0.4699999988079071,
+              0.7599999904632568,
+              0.23999999463558197,
+              0.23000000417232513,
+              0.5600000023841858
+            ],
+            "reasoning": "The seller's latest proposal is less favorable than our previous negotiation point. Our model suggests a strong counter that pushes for longer contract, lower payment terms, and higher data rights. We want to signal we're serious about our priorities while leaving room for further negotiation.",
+            "had_briefing": true
+          },
+          {
+            "role": "seller",
+            "action": "offer",
+            "proposal": [
+              0.550000011920929,
+              0.6499999761581421,
+              0.44999998807907104,
+              0.2199999988079071,
+              0.25
+            ],
+            "reasoning": "The buyer's proposal has some concerning elements. The contract length is quite long at 0.76, which I don't prefer. The price has dropped from my previous proposal, and the payment terms are much lower. However, the utility of 0.500 is not bad. I need to nudge the variables back in my favor, especially price and payment terms.",
+            "had_briefing": false
+          },
+          {
+            "role": "buyer",
+            "action": "offer",
+            "proposal": [
+              0.6100000143051147,
+              0.7300000190734863,
+              0.25999999046325684,
+              0.27000001072883606,
+              0.5099999904632568
+            ],
+            "reasoning": "The seller's latest offer is close to acceptable, but our model suggests we can improve our position. We'll nudge the variables slightly to maximize our utility, focusing on payment terms and data rights which are our highest priority variables. We're in the late stages, so we need to balance pushing for better terms with the risk of no deal.",
+            "had_briefing": true
+          },
+          {
+            "role": "seller",
+            "action": "offer",
+            "proposal": [
+              0.6299999952316284,
+              0.699999988079071,
+              0.30000001192092896,
+              0.25,
+              0.47999998927116394
+            ],
+            "reasoning": "The buyer's proposal gives me a solid 0.537 utility, which is significantly better than the 0.000 I'd get with no deal. With only two rounds left, this looks like a strong offer. The price is decent, contract length is longer than I prefer, but other terms are acceptable. Pushing further might risk losing everything.",
+            "had_briefing": false
+          },
+          {
+            "role": "buyer",
+            "action": "accept",
+            "proposal": null,
+            "reasoning": "[Final-round auto-accept: utility 0.614 > 0.15]",
+            "had_briefing": false
+          }
+        ],
+        "buyer_weights": [
+          0.07747603416069651,
+          0.1685171415357189,
+          0.4937791952470911,
+          0.012969490286458999,
+          0.24725813877003444
+        ],
+        "seller_weights": [
+          0.25568760643607075,
+          0.008059198185055717,
+          0.24335352237962846,
+          0.30968416816374056,
+          0.18321550483550453
+        ]
+      },
+      {
+        "deal": true,
+        "buyer_utility": 0.5369777083396912,
+        "seller_utility": 0.5539887547492981,
+        "joint_surplus": 1.0909664630889893,
+        "max_joint_surplus": 1.586290955543518,
+        "pareto_efficiency": 0.6877467587370732,
+        "buyer_surplus_share": 0.4922036804131259,
+        "deal_proposal": [
+          0.46000000834465027,
+          0.28999999165534973,
+          0.49000000953674316,
+          0.7200000286102295,
+          0.3100000023841858
+        ],
+        "optimal_proposal": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "rounds": 7,
+        "turns": [
+          {
+            "role": "buyer",
+            "action": "offer",
+            "proposal": [
+              0.30000001192092896,
+              0.3400000035762787,
+              0.2800000011920929,
+              0.27000001072883606,
+              0.3100000023841858
+            ],
+            "reasoning": "I'll open with the model's recommended proposal. This balanced approach targets a low price, moderate contract length, and favorable payment terms while securing good SLA and data rights. It's strategically crafted to maximize my utility and create room for negotiation.",
+            "had_briefing": true
+          },
+          {
+            "role": "seller",
+            "action": "offer",
+            "proposal": [
+              0.3499999940395355,
+              0.30000001192092896,
+              0.3499999940395355,
+              0.25,
+              0.25
+            ],
+            "reasoning": "The buyer's initial proposal is quite favorable to me. The price is relatively low, contract length is moderate, payment terms are quick, SLA tier is basic, and data rights lean towards vendor ownership. However, I can try to nudge these slightly more in my direction to maximize utility.",
+            "had_briefing": false
+          },
+          {
+            "role": "buyer",
+            "action": "offer",
+            "proposal": [
+              0.30000001192092896,
+              0.2800000011920929,
+              0.28999999165534973,
+              0.3100000023841858,
+              0.2800000011920929
+            ],
+            "reasoning": "The seller's latest proposal slightly increased price and payment terms, which are my most sensitive variables. I'll counter with the model-recommended proposal that protects my key priorities, especially keeping price and payment terms low while maintaining a decent SLA tier.",
+            "had_briefing": true
+          },
+          {
+            "role": "seller",
+            "action": "offer",
+            "proposal": [
+              0.33000001311302185,
+              0.27000001072883606,
+              0.3199999928474426,
+              0.30000001192092896,
+              0.25999999046325684
+            ],
+            "reasoning": "The buyer's latest proposal is actually quite close to my preferences. The utility of 0.606 is very good, and we're midway through negotiations. While I could try to push for slightly better terms, the risk of no deal is high. The current offer gives me favorable conditions on most variables, especially price and payment terms.",
+            "had_briefing": false
+          },
+          {
+            "role": "buyer",
+            "action": "offer",
+            "proposal": [
+              0.46000000834465027,
+              0.28999999165534973,
+              0.3400000035762787,
+              0.4699999988079071,
+              0.2800000011920929
+            ],
+            "reasoning": "The seller's latest proposal gives me a solid 0.614 utility, which is quite good. However, the computed optimal proposal suggests I can push for slightly better terms, especially on price and SLA tier. I'll make a strategic counter that's close to the model's recommendation.",
+            "had_briefing": true
+          },
+          {
+            "role": "seller",
+            "action": "offer",
+            "proposal": [
+              0.47999998927116394,
+              0.28999999165534973,
+              0.3400000035762787,
+              0.4699999988079071,
+              0.25999999046325684
+            ],
+            "reasoning": "The buyer's latest proposal gives me a solid 0.598 utility, which is significantly better than a potential zero-utility outcome. With only 3 rounds left, I should carefully consider this offer. While I could try to negotiate slightly better terms, the risk of losing the deal is high. The price and SLA tier are particularly favorable to me.",
+            "had_briefing": false
+          },
+          {
+            "role": "buyer",
+            "action": "offer",
+            "proposal": [
+              0.46000000834465027,
+              0.28999999165534973,
+              0.49000000953674316,
+              0.7200000286102295,
+              0.3100000023841858
+            ],
+            "reasoning": "We're in the critical final stages. The seller's latest offer gives me 0.567 utility, which is very close to our model's optimal proposal of 0.602. With only two rounds left, I need to be strategic. I'll make a slight adjustment to push for better payment terms and SLA, but not so aggressive that I risk no deal.",
+            "had_briefing": true
+          },
+          {
+            "role": "seller",
+            "action": "accept",
+            "proposal": null,
+            "reasoning": "[Final-round auto-accept: utility 0.554 > 0.15]",
+            "had_briefing": false
+          }
+        ],
+        "buyer_weights": [
+          0.3859063803298158,
+          0.015508801907581297,
+          0.4551312063230945,
+          0.11586139899778636,
+          0.027592212441722243
+        ],
+        "seller_weights": [
+          0.15291731370984252,
+          0.3272572362704888,
+          0.10182931094615978,
+          0.2122428668860986,
+          0.20575327218741046
+        ]
+      },
+      {
+        "deal": true,
+        "buyer_utility": 0.6023052334785461,
+        "seller_utility": 0.3983643352985382,
+        "joint_surplus": 1.0006695687770844,
+        "max_joint_surplus": 1.4866651892662048,
+        "pareto_efficiency": 0.6730967913972611,
+        "buyer_surplus_share": 0.6019022185461499,
+        "deal_proposal": [
+          0.7099999785423279,
+          0.5299999713897705,
+          0.38999998569488525,
+          0.699999988079071,
+          0.6800000071525574
+        ],
+        "optimal_proposal": [
+          1.0,
+          1.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "rounds": 7,
+        "turns": [
+          {
+            "role": "buyer",
+            "action": "offer",
+            "proposal": [
+              0.6899999976158142,
+              0.7300000190734863,
+              0.30000001192092896,
+              0.25999999046325684,
+              0.6000000238418579
+            ],
+            "reasoning": "I'll start with a strategic proposal that balances my key priorities. The model suggests a moderate price with a longer contract, slower payment terms, and strong data rights. This gives me leverage while showing willingness to negotiate.",
+            "had_briefing": true
+          },
+          {
+            "role": "seller",
+            "action": "offer",
+            "proposal": [
+              0.75,
+              0.5,
+              0.5,
+              0.20000000298023224,
+              0.4000000059604645
+            ],
+            "reasoning": "The buyer's initial proposal is quite favorable to them. The contract length is too long, payment terms are slow, and the SLA tier is low. I need to push back on these variables while maintaining a collaborative tone.",
+            "had_briefing": false
+          },
+          {
+            "role": "buyer",
+            "action": "offer",
+            "proposal": [
+              0.6299999952316284,
+              0.5799999833106995,
+              0.33000001311302185,
+              0.3100000023841858,
+              0.5
+            ],
+            "reasoning": "The seller's last proposal increased price and payment terms while reducing contract length and data rights. Our model suggests a counterproposal that maintains our key priorities of long contract and high data rights, while slightly conceding on price and SLA.",
+            "had_briefing": true
+          },
+          {
+            "role": "seller",
+            "action": "offer",
+            "proposal": [
+              0.6800000071525574,
+              0.5799999833106995,
+              0.4000000059604645,
+              0.3100000023841858,
+              0.5
+            ],
+            "reasoning": "The buyer's latest proposal has lowered the price and reduced payment terms, which hurts my utility. However, the contract length and data rights are slightly more favorable. My current utility of 0.558 is quite good, but I might try to nudge a few variables in my preferred direction. I'll focus on increasing price and payment terms while maintaining the other variables.",
+            "had_briefing": false
+          },
+          {
+            "role": "buyer",
+            "action": "offer",
+            "proposal": [
+              0.7300000190734863,
+              0.5299999713897705,
+              0.3700000047683716,
+              0.46000000834465027,
+              0.6200000047683716
+            ],
+            "reasoning": "The seller's latest proposal is close to our previous offer, with a slight increase in price and payment terms. Our model suggests a more aggressive approach to maximize utility, particularly by pushing for higher SLA tier and data rights. We want to signal we're willing to trade but also seeking more value.",
+            "had_briefing": true
+          },
+          {
+            "role": "seller",
+            "action": "offer",
+            "proposal": [
+              0.75,
+              0.5299999713897705,
+              0.4000000059604645,
+              0.4000000059604645,
+              0.550000011920929
+            ],
+            "reasoning": "The buyer's latest proposal is quite favorable, offering 0.509 utility which is significantly better than a no-deal scenario. With only 3 rounds left, I should carefully consider this offer. The price has increased slightly, contract length is acceptable, and they've improved the SLA tier and data rights. I'm close to a good deal.",
+            "had_briefing": false
+          },
+          {
+            "role": "buyer",
+            "action": "offer",
+            "proposal": [
+              0.7099999785423279,
+              0.5299999713897705,
+              0.38999998569488525,
+              0.699999988079071,
+              0.6800000071525574
+            ],
+            "reasoning": "We're in the critical final rounds. The seller's last proposal gives me 0.541 utility, which is quite good. However, our model suggests we can slightly improve by pushing for a higher SLA tier and stronger data rights. I'll make a nuanced counter that shows we're serious about closing but want a bit more value.",
+            "had_briefing": true
+          },
+          {
+            "role": "seller",
+            "action": "accept",
+            "proposal": null,
+            "reasoning": "[Final-round auto-accept: utility 0.398 > 0.15]",
+            "had_briefing": false
+          }
+        ],
+        "buyer_weights": [
+          0.023771066730194555,
+          0.29353976248998964,
+          0.3761548685691024,
+          0.09688761920172353,
+          0.20964668300898984
+        ],
+        "seller_weights": [
+          0.15804639923686373,
+          0.05030320606948571,
+          0.25951886665325474,
+          0.4492774540117018,
+          0.08285407402869382
+        ]
+      },
+      {
+        "deal": true,
+        "buyer_utility": 0.5502530336380005,
+        "seller_utility": 0.45459896326065063,
+        "joint_surplus": 1.0048519968986511,
+        "max_joint_surplus": 1.1327452659606934,
+        "pareto_efficiency": 0.8870944130995113,
+        "buyer_surplus_share": 0.5475960990636303,
+        "deal_proposal": [
+          0.6299999952316284,
+          0.46000000834465027,
+          0.5899999737739563,
+          0.7200000286102295,
+          0.6100000143051147
+        ],
+        "optimal_proposal": [
+          0.0,
+          1.0,
+          1.0,
+          1.0,
+          0.0
+        ],
+        "rounds": 7,
+        "turns": [
+          {
+            "role": "buyer",
+            "action": "offer",
+            "proposal": [
+              0.5899999737739563,
+              0.7300000190734863,
+              0.4300000071525574,
+              0.33000001311302185,
+              0.6499999761581421
+            ],
+            "reasoning": "I'll lead with a strong proposal that protects my key interests. The model suggests a balanced approach that secures long-term contract, favorable data rights, and a moderate price point. This gives me room to negotiate while signaling I'm serious about getting value.",
+            "had_briefing": true
+          },
+          {
+            "role": "seller",
+            "action": "offer",
+            "proposal": [
+              0.5899999737739563,
+              0.5,
+              0.6499999761581421,
+              0.25,
+              0.3499999940395355
+            ],
+            "reasoning": "The buyer's initial proposal is somewhat unfavorable. The contract length is too long, payment terms are not ideal, and data rights are too client-friendly. I need to push back strategically, especially on contract length and data rights.",
+            "had_briefing": false
+          },
+          {
+            "role": "buyer",
+            "action": "offer",
+            "proposal": [
+              0.5199999809265137,
+              0.5799999833106995,
+              0.46000000834465027,
+              0.38999998569488525,
+              0.5600000023841858
+            ],
+            "reasoning": "The seller has reduced contract length and data rights while increasing payment terms. Our model suggests a balanced counter that protects our key priorities of long contract and strong data rights. We'll slightly soften our stance to show negotiation flexibility.",
+            "had_briefing": true
+          },
+          {
+            "role": "seller",
+            "action": "offer",
+            "proposal": [
+              0.550000011920929,
+              0.550000011920929,
+              0.6000000238418579,
+              0.3499999940395355,
+              0.4000000059604645
+            ],
+            "reasoning": "The buyer's latest proposal has slightly improved from their first offer, but it still doesn't fully align with my preferences. I want to push for higher payment terms and lower data rights. The current utility of 0.475 is promising, but I believe I can negotiate a bit more in my favor.",
+            "had_briefing": false
+          },
+          {
+            "role": "buyer",
+            "action": "offer",
+            "proposal": [
+              0.699999988079071,
+              0.550000011920929,
+              0.5600000023841858,
+              0.6899999976158142,
+              0.5799999833106995
+            ],
+            "reasoning": "The seller's latest proposal is close to our previous negotiation point, but doesn't fully capture our key priorities. Our model suggests a more aggressive stance, particularly on price and SLA tier. We need to signal we're willing to pay more for higher service quality and longer-term commitment.",
+            "had_briefing": true
+          },
+          {
+            "role": "seller",
+            "action": "offer",
+            "proposal": [
+              0.6499999761581421,
+              0.5,
+              0.6000000238418579,
+              0.5,
+              0.44999998807907104
+            ],
+            "reasoning": "The buyer's latest proposal increases utility to 0.450, which is significant. With only 3 rounds left, I need to be strategic. The SLA tier and price are higher than my previous offer, but data rights and payment terms are slightly less favorable. I'll make a moderate counter-offer that nudges the variables in my preferred direction.",
+            "had_briefing": false
+          },
+          {
+            "role": "buyer",
+            "action": "offer",
+            "proposal": [
+              0.6299999952316284,
+              0.46000000834465027,
+              0.5899999737739563,
+              0.7200000286102295,
+              0.6100000143051147
+            ],
+            "reasoning": "We're in the critical final stages. The current offer gives 0.463 utility, which is significantly better than no deal. However, our model suggests we can slightly improve our position. I'll make a nuanced counter that shows we're willing to compromise but still seek marginal gains.",
+            "had_briefing": true
+          },
+          {
+            "role": "seller",
+            "action": "accept",
+            "proposal": null,
+            "reasoning": "[Final-round auto-accept: utility 0.455 > 0.15]",
+            "had_briefing": false
+          }
+        ],
+        "buyer_weights": [
+          0.052890572629072666,
+          0.29399356360225576,
+          0.12937497534989137,
+          0.20837070652339265,
+          0.31537018189538757
+        ],
+        "seller_weights": [
+          0.04833321372744981,
+          0.19463486477785785,
+          0.21776674721624734,
+          0.17954147389586886,
+          0.3597237003825763
+        ]
+      },
+      {
+        "deal": true,
+        "buyer_utility": 0.616587221622467,
+        "seller_utility": 0.6559163331985474,
+        "joint_surplus": 1.2725035548210144,
+        "max_joint_surplus": 1.7683634757995605,
+        "pareto_efficiency": 0.7195938913212713,
+        "buyer_surplus_share": 0.4845465612150639,
+        "deal_proposal": [
+          0.5299999713897705,
+          0.7200000286102295,
+          0.3700000047683716,
+          0.2800000011920929,
+          0.27000001072883606
+        ],
+        "optimal_proposal": [
+          1.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "rounds": 7,
+        "turns": [
+          {
+            "role": "buyer",
+            "action": "offer",
+            "proposal": [
+              0.4399999976158142,
+              0.6399999856948853,
+              0.25,
+              0.1899999976158142,
+              0.18000000715255737
+            ],
+            "reasoning": "I'll lead with a balanced proposal that emphasizes my key priorities of slow payment terms and a longer contract, while keeping price moderate. The model suggests a strategic approach that gives me some leverage without being too aggressive.",
+            "had_briefing": true
+          },
+          {
+            "role": "seller",
+            "action": "offer",
+            "proposal": [
+              0.5199999809265137,
+              0.4000000059604645,
+              0.25,
+              0.1899999976158142,
+              0.18000000715255737
+            ],
+            "reasoning": "The buyer's initial proposal is quite favorable to me. The low data rights, short payment terms, and lower SLA tier align well with my preferences. However, I want to see if I can push the price slightly higher and reduce the contract length even more.",
+            "had_briefing": false
+          },
+          {
+            "role": "buyer",
+            "action": "offer",
+            "proposal": [
+              0.4000000059604645,
+              0.5099999904632568,
+              0.25999999046325684,
+              0.2199999988079071,
+              0.20999999344348907
+            ],
+            "reasoning": "The seller's latest proposal increased price, which hurts my utility. I'll counter with the model-recommended proposal that slightly reduces price and improves other variables. My payment terms weight is extremely high, so I want to maintain flexibility there.",
+            "had_briefing": true
+          },
+          {
+            "role": "seller",
+            "action": "offer",
+            "proposal": [
+              0.47999998927116394,
+              0.49000000953674316,
+              0.27000001072883606,
+              0.20000000298023224,
+              0.1899999976158142
+            ],
+            "reasoning": "The buyer's latest proposal has slightly improved from their initial offer, but it's still not ideal for me. The price has dropped, which hurts my utility. However, the contract length, payment terms, and data rights have marginally improved. I need to push back on price while showing some flexibility.",
+            "had_briefing": false
+          },
+          {
+            "role": "buyer",
+            "action": "offer",
+            "proposal": [
+              0.4399999976158142,
+              0.7400000095367432,
+              0.3400000035762787,
+              0.25,
+              0.23999999463558197
+            ],
+            "reasoning": "The seller's latest proposal is close to our optimal strategy, but we can still push for slightly better terms. Our model suggests increasing contract length and payment terms while maintaining a moderate price. We want to signal willingness to negotiate while protecting our key priorities.",
+            "had_briefing": true
+          },
+          {
+            "role": "seller",
+            "action": "offer",
+            "proposal": [
+              0.46000000834465027,
+              0.699999988079071,
+              0.33000001311302185,
+              0.23000000417232513,
+              0.2199999988079071
+            ],
+            "reasoning": "The buyer's latest proposal gives me a very high utility of 0.656, which is significantly better than a potential zero from no deal. With only 3 rounds left, the risk of continuing negotiations is high. The contract length and data rights are moving closer to my preferences, and the price, while slightly lower, is still reasonable.",
+            "had_briefing": false
+          },
+          {
+            "role": "buyer",
+            "action": "offer",
+            "proposal": [
+              0.5299999713897705,
+              0.7200000286102295,
+              0.3700000047683716,
+              0.2800000011920929,
+              0.27000001072883606
+            ],
+            "reasoning": "We're in the critical final stages. The current offer gives 0.653 utility, which is very good. However, the model suggests we can push slightly harder. I'll make a marginal adjustment to see if the seller will budge, but I'm prepared to accept if they resist.",
+            "had_briefing": true
+          },
+          {
+            "role": "seller",
+            "action": "accept",
+            "proposal": null,
+            "reasoning": "[Final-round auto-accept: utility 0.656 > 0.15]",
+            "had_briefing": false
+          }
+        ],
+        "buyer_weights": [
+          0.13168494115127083,
+          0.12007058949281292,
+          0.7392655935843903,
+          0.00828033895615897,
+          0.0006985368153670395
+        ],
+        "seller_weights": [
+          0.20119824436649883,
+          0.005601988442702968,
+          0.08537075575595127,
+          0.0589624865230511,
+          0.6488665249117959
+        ]
+      },
+      {
+        "deal": true,
+        "buyer_utility": 0.6227505207061768,
+        "seller_utility": 0.4775047302246094,
+        "joint_surplus": 1.1002552509307861,
+        "max_joint_surplus": 1.6936854720115662,
+        "pareto_efficiency": 0.6496219452269545,
+        "buyer_surplus_share": 0.5660054975237306,
+        "deal_proposal": [
+          0.47999998927116394,
+          0.3799999952316284,
+          0.46000000834465027,
+          0.7300000190734863,
+          0.3199999928474426
+        ],
+        "optimal_proposal": [
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "rounds": 7,
+        "turns": [
+          {
+            "role": "buyer",
+            "action": "offer",
+            "proposal": [
+              0.4099999964237213,
+              0.6100000143051147,
+              0.5199999809265137,
+              0.47999998927116394,
+              0.4000000059604645
+            ],
+            "reasoning": "I'll start with the model's recommended proposal, which balances my key priorities. The focus is on getting a good SLA tier and a reasonable contract length, while keeping price moderate. This gives me flexibility and strong service guarantees.",
+            "had_briefing": true
+          },
+          {
+            "role": "seller",
+            "action": "offer",
+            "proposal": [
+              0.47999998927116394,
+              0.4000000059604645,
+              0.6499999761581421,
+              0.3499999940395355,
+              0.30000001192092896
+            ],
+            "reasoning": "The buyer's initial proposal is somewhat favorable, but I can definitely push for better terms. I want to drive down the contract length, improve payment terms, reduce SLA tier, and lower data rights. Price is already lower than ideal, so I'll make a moderate adjustment there.",
+            "had_briefing": false
+          },
+          {
+            "role": "buyer",
+            "action": "offer",
+            "proposal": [
+              0.36000001430511475,
+              0.4399999976158142,
+              0.5299999713897705,
+              0.5299999713897705,
+              0.3400000035762787
+            ],
+            "reasoning": "The model suggests a strategic proposal that slightly reduces price and contract length while boosting SLA tier. This targets the seller's weak points and aligns with my priority of getting a high-quality service at a lower cost. The utility looks promising.",
+            "had_briefing": true
+          },
+          {
+            "role": "seller",
+            "action": "offer",
+            "proposal": [
+              0.41999998688697815,
+              0.41999998688697815,
+              0.6000000238418579,
+              0.4000000059604645,
+              0.3199999928474426
+            ],
+            "reasoning": "The buyer's proposal has lowered the price and reduced our preferred payment terms. While the utility is still positive at 0.430, I want to push back slightly to maintain our pricing and payment advantages. I'll make a moderate counter that preserves most of our key priorities.",
+            "had_briefing": false
+          },
+          {
+            "role": "buyer",
+            "action": "offer",
+            "proposal": [
+              0.3499999940395355,
+              0.36000001430511475,
+              0.47999998927116394,
+              0.6499999761581421,
+              0.3100000023841858
+            ],
+            "reasoning": "The seller's latest proposal shows some movement toward my preferences, but I can still push for better terms. My model suggests a proposal that emphasizes SLA tier while keeping price low. I'll make a strategic counter that signals I'm serious about getting the right service level.",
+            "had_briefing": true
+          },
+          {
+            "role": "seller",
+            "action": "offer",
+            "proposal": [
+              0.3799999952316284,
+              0.3400000035762787,
+              0.5,
+              0.6000000238418579,
+              0.30000001192092896
+            ],
+            "reasoning": "The buyer's latest offer gives me 0.407 utility, which is positive and significantly better than a no-deal scenario. With only 3 rounds left, I should be cautious about pushing too hard. The SLA tier is higher than I prefer, but the price and payment terms are moving in a direction I can accept.",
+            "had_briefing": false
+          },
+          {
+            "role": "buyer",
+            "action": "offer",
+            "proposal": [
+              0.47999998927116394,
+              0.3799999952316284,
+              0.46000000834465027,
+              0.7300000190734863,
+              0.3199999928474426
+            ],
+            "reasoning": "We're in the final stretch with only two rounds left. The model suggests a slightly more aggressive proposal, particularly on price and SLA tier. The current offer gives 0.553 utility, which is tempting, but our optimal proposal could push us to 0.621. However, we must be careful not to risk losing the deal entirely.",
+            "had_briefing": true
+          },
+          {
+            "role": "seller",
+            "action": "accept",
+            "proposal": null,
+            "reasoning": "[Final-round auto-accept: utility 0.478 > 0.15]",
+            "had_briefing": false
+          }
+        ],
+        "buyer_weights": [
+          0.16721847634689743,
+          0.09907197697266758,
+          0.0731405050630123,
+          0.603101488985169,
+          0.05746755263225362
+        ],
+        "seller_weights": [
+          0.60981998777207,
+          0.010565436652916885,
+          0.32422440147966713,
+          0.0208975335111401,
+          0.03449264058420582
+        ]
+      },
+      {
+        "deal": true,
+        "buyer_utility": 0.539098858833313,
+        "seller_utility": 0.5027288198471069,
+        "joint_surplus": 1.04182767868042,
+        "max_joint_surplus": 1.3446226119995117,
+        "pareto_efficiency": 0.7748104705239021,
+        "buyer_surplus_share": 0.5174549206795276,
+        "deal_proposal": [
+          0.44999998807907104,
+          0.7200000286102295,
+          0.7300000190734863,
+          0.47999998927116394,
+          0.5099999904632568
+        ],
+        "optimal_proposal": [
+          0.0,
+          1.0,
+          1.0,
+          1.0,
+          0.0
+        ],
+        "rounds": 7,
+        "turns": [
+          {
+            "role": "seller",
+            "action": "offer",
+            "proposal": [
+              0.75,
+              0.25,
+              0.8999999761581421,
+              0.20000000298023224,
+              0.10000000149011612
+            ],
+            "reasoning": "As the seller, I want to start with a proposal that protects my key interests. I'll aim for a high price, short contract, fast payment, basic SLA, and vendor-controlled data rights. This balances my priorities while leaving room for negotiation.",
+            "had_briefing": false
+          },
+          {
+            "role": "buyer",
+            "action": "offer",
+            "proposal": [
+              0.27000001072883606,
+              0.5199999809265137,
+              0.7400000095367432,
+              0.4099999964237213,
+              0.4699999988079071
+            ],
+            "reasoning": "The seller's initial offer is quite unfavorable. Their high price and low contract length, combined with poor data rights, means I need to push for significant improvements. The computed model proposal looks strategic, targeting key variables to maximize my utility.",
+            "had_briefing": true
+          },
+          {
+            "role": "seller",
+            "action": "offer",
+            "proposal": [
+              0.6200000047683716,
+              0.47999998927116394,
+              0.75,
+              0.30000001192092896,
+              0.20000000298023224
+            ],
+            "reasoning": "The buyer's proposal is significantly better for them than my previous offer. While my current utility is 0.489, which is positive, I want to push back on price and data rights. The contract length and payment terms are somewhat acceptable, but I need to improve price and regain more control over data rights.",
+            "had_briefing": false
+          },
+          {
+            "role": "buyer",
+            "action": "offer",
+            "proposal": [
+              0.38999998569488525,
+              0.7599999904632568,
+              0.7200000286102295,
+              0.4300000071525574,
+              0.46000000834465027
+            ],
+            "reasoning": "The seller's latest proposal is less favorable than our previous negotiation point. Our model suggests a strategic counter that pushes for better contract length and slightly higher SLA, while moderating the price. We want to signal we're serious about getting a good deal without being unreasonable.",
+            "had_briefing": true
+          },
+          {
+            "role": "seller",
+            "action": "offer",
+            "proposal": [
+              0.5199999809265137,
+              0.699999988079071,
+              0.7300000190734863,
+              0.3799999952316284,
+              0.3799999952316284
+            ],
+            "reasoning": "The buyer's proposal has lowered the price significantly, which hurts my utility. However, they've increased contract length and maintained favorable payment terms. I need to push back on price while finding a balanced compromise. My utility would drop from my previous proposal, so I'll aim to recover some ground.",
+            "had_briefing": false
+          },
+          {
+            "role": "buyer",
+            "action": "offer",
+            "proposal": [
+              0.4099999964237213,
+              0.7200000286102295,
+              0.7300000190734863,
+              0.47999998927116394,
+              0.5099999904632568
+            ],
+            "reasoning": "The seller's latest proposal has slightly reduced utility compared to my previous offer. The computed optimal proposal increases my utility, so I'll strategically push for my model-recommended terms. With only 3 rounds left, I need to balance negotiation with the risk of no deal.",
+            "had_briefing": true
+          },
+          {
+            "role": "seller",
+            "action": "offer",
+            "proposal": [
+              0.44999998807907104,
+              0.7200000286102295,
+              0.7300000190734863,
+              0.47999998927116394,
+              0.5099999904632568
+            ],
+            "reasoning": "The buyer's latest proposal gives me a utility of 0.492, which is significantly better than a no-deal outcome of 0.000. With only two rounds left, the risk of continuing negotiations is high. The proposal is quite favorable, especially on payment terms and contract length. I should seriously consider accepting.",
+            "had_briefing": false
+          },
+          {
+            "role": "buyer",
+            "action": "accept",
+            "proposal": null,
+            "reasoning": "[Final-round auto-accept: utility 0.539 > 0.15]",
+            "had_briefing": false
+          }
+        ],
+        "buyer_weights": [
+          0.39667415027224195,
+          0.120093919323415,
+          0.008383256158185394,
+          0.3325289542617426,
+          0.1423197199844151
+        ],
+        "seller_weights": [
+          0.2745101445556227,
+          0.013864840780987847,
+          0.08388274770006224,
+          0.21629944674030666,
+          0.41144282022302053
+        ]
+      },
+      {
+        "deal": true,
+        "buyer_utility": 0.5778581500053406,
+        "seller_utility": 0.33036279678344727,
+        "joint_surplus": 0.9082209467887878,
+        "max_joint_surplus": 1.6485639810562134,
+        "pareto_efficiency": 0.5509164079921863,
+        "buyer_surplus_share": 0.6362528325827359,
+        "deal_proposal": [
+          0.3700000047683716,
+          0.4000000059604645,
+          0.6700000166893005,
+          0.7200000286102295,
+          0.46000000834465027
+        ],
+        "optimal_proposal": [
+          0.0,
+          1.0,
+          1.0,
+          0.0,
+          1.0
+        ],
+        "rounds": 7,
+        "turns": [
+          {
+            "role": "buyer",
+            "action": "offer",
+            "proposal": [
+              0.3100000023841858,
+              0.6499999761581421,
+              0.6000000238418579,
+              0.36000001430511475,
+              0.5899999737739563
+            ],
+            "reasoning": "I'll lead with a balanced proposal that protects my key interests. The model suggests a moderate price point, longer contract, delayed payments, decent SLA, and strong data rights. This shows I'm serious about a partnership but not desperate.",
+            "had_briefing": true
+          },
+          {
+            "role": "seller",
+            "action": "offer",
+            "proposal": [
+              0.3499999940395355,
+              0.550000011920929,
+              0.6499999761581421,
+              0.30000001192092896,
+              0.550000011920929
+            ],
+            "reasoning": "The buyer's initial proposal is quite favorable to me. The low SLA tier (0.360) aligns perfectly with my highest priority, and the payment terms are good. The contract length is a bit long, but the overall utility of 0.625 is strong. I'll make a slight adjustment to push for an even better deal.",
+            "had_briefing": false
+          },
+          {
+            "role": "buyer",
+            "action": "offer",
+            "proposal": [
+              0.28999999165534973,
+              0.4699999988079071,
+              0.6100000143051147,
+              0.41999998688697815,
+              0.49000000953674316
+            ],
+            "reasoning": "The model suggests a strategic proposal that slightly reduces contract length and price while improving SLA tier. This balances my priorities of low price and high service quality. The utility is promising at 0.543, which is better than the seller's last offer of 0.510.",
+            "had_briefing": true
+          },
+          {
+            "role": "seller",
+            "action": "offer",
+            "proposal": [
+              0.3199999928474426,
+              0.5,
+              0.6299999952316284,
+              0.3799999952316284,
+              0.5199999809265137
+            ],
+            "reasoning": "The buyer's latest proposal has reduced my utility from my previous offer. While the SLA tier has improved (which is my highest priority), the price and data rights have dropped. I want to maintain pressure on the SLA tier while showing some flexibility on other variables.",
+            "had_briefing": false
+          },
+          {
+            "role": "buyer",
+            "action": "offer",
+            "proposal": [
+              0.44999998807907104,
+              0.550000011920929,
+              0.6899999976158142,
+              0.6800000071525574,
+              0.5199999809265137
+            ],
+            "reasoning": "The seller's latest proposal gives me a solid 0.531 utility, which is quite good. However, the computed optimal proposal suggests I can push for even better terms, particularly on SLA tier and price. I'll make a strategic counter that slightly moderates the model's recommendation to appear collaborative.",
+            "had_briefing": true
+          },
+          {
+            "role": "seller",
+            "action": "offer",
+            "proposal": [
+              0.44999998807907104,
+              0.550000011920929,
+              0.6899999976158142,
+              0.6000000238418579,
+              0.5199999809265137
+            ],
+            "reasoning": "The buyer's latest proposal significantly increases the SLA tier, which is my highest priority. The utility of 0.365 is tempting, especially with only 3 rounds left. However, I might try to negotiate the SLA down slightly while keeping other terms close to their current offer.",
+            "had_briefing": false
+          },
+          {
+            "role": "buyer",
+            "action": "offer",
+            "proposal": [
+              0.3700000047683716,
+              0.4000000059604645,
+              0.6700000166893005,
+              0.7200000286102295,
+              0.46000000834465027
+            ],
+            "reasoning": "We're in the critical final stages. The seller's last proposal gives me 0.547 utility, which is very close to our model's optimal proposal of 0.579. With only two rounds left, I need to make a strategic decision that doesn't risk losing everything.",
+            "had_briefing": true
+          },
+          {
+            "role": "seller",
+            "action": "accept",
+            "proposal": null,
+            "reasoning": "[Final-round auto-accept: utility 0.330 > 0.15]",
+            "had_briefing": false
+          }
+        ],
+        "buyer_weights": [
+          0.36265743909591724,
+          0.13267423320921456,
+          0.04395695995622355,
+          0.2687739334780553,
+          0.19193743426058943
+        ],
+        "seller_weights": [
+          0.01151640396210558,
+          0.008588805224396801,
+          0.10703068015399414,
+          0.8542642223546215,
+          0.018599888304881997
+        ]
+      }
+    ]
+  }
+}

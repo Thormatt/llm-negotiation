@@ -2,7 +2,7 @@
 
 **Mathematical Guardrails and Channel Removal for LLM Negotiators in Multi-Issue Bargaining**
 
-Thor Matthiasson | Independent Researcher | Reykjavik, Iceland
+Thor Matthiasson | Independent Researcher | New Haven, Connecticut, USA
 
 [Paper (PDF)](paper.pdf)
 
@@ -68,7 +68,9 @@ A **neural policy** (6,533-parameter MLP) trained via behavioral cloning and rew
 
 ```
 llm-negotiation/
-  paper.pdf                    # Full paper (24 pages)
+  paper.pdf                    # Full paper (32 pages, 3 figures, 18 tables)
+  paper.tex                    # LaTeX source (inline bibliography, builds standalone)
+  AUDIT_REPORT.md              # Record of the pre-submission audit pass
   src/
     negotiation.py             # LLM negotiation engine (OpenRouter API)
     train_negotiation_gru.py   # NegotiationGRU model (11,078 params)
@@ -86,14 +88,47 @@ llm-negotiation/
     modal_crossmodel_baseline.py # Cross-model experiments
     arena.py                   # Tournament framework
     agent_loop.py              # Agent control loop
+    protocols/                 # Middleman protocols (Phase B)
+      nash_bargaining.py       # NashBargaining2P
+      vickrey.py               # Vickrey auction protocol
+      llm_io_negotiation.py    # LLMIO translation layer
+      phase_b_offline.py       # Offline replay of N=200 weight pairs
+      phase_b_crossmodel.py    # Cross-model replay through protocols
+      PHASE_B_RESULTS.md       # Phase B findings write-up
+    auctions/                  # Sealed-bid auction replication (Phase A)
+      auction_env.py           # First-price sealed-bid environment
+      equilibrium_bidder.py    # Equilibrium / naive / shading bidders
+      llm_bidder.py            # LLM bidder conditions A0-A2
+    framework/                 # Shared LLM-as-mouth scaffolding
   checkpoints/
     negotiation_gru.pt         # Trained NegotiationGRU
     negotiation_gru_finetuned.pt
     policy_net_bc.pt           # Behavioral cloning policy
     policy_net_rwr.pt          # Reward-weighted regression policy
+  data-packet/                 # Companion data packet (v1.0)
+    MANIFEST.csv               # sha256 + table mapping, one row per file
+    seeds.json                 # Seed registry (base seed, opener seeds)
+    checkpoints/               # The two load-bearing checkpoints
+    prompts/                   # Verbatim system-prompt templates
+    results/                   # Per-game JSON logs, grouped by table
+    scripts/verify_packet.py   # Confirm sha256 + JSON-loadability
+    scripts/compute_tables.py  # Recompute headline tables from raw logs
   requirements.txt
   LICENSE
 ```
+
+## Reproducing the tables
+
+Every headline table recomputes from the raw per-game logs in `data-packet/`:
+
+```bash
+cd data-packet
+python3 scripts/verify_packet.py    # sha256 integrity: expect "All checks passed."
+python3 scripts/compute_tables.py   # recompute headline tables from raw JSON
+```
+
+`verify_packet.py` checks all 49 files against `MANIFEST.csv`. No API keys or
+network access are needed for either script -- they read the logged games only.
 
 ## Quick Start
 
