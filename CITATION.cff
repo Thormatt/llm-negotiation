@@ -1,0 +1,25 @@
+cff-version: 1.2.0
+message: "If you use this code or data, please cite the paper."
+title: "Computed Targets and the Middleman Protocol: Mathematical Guardrails and Channel Removal for LLM Negotiators in Multi-Issue Bargaining"
+authors:
+  - family-names: Matthiasson
+    given-names: Thor
+    affiliation: Independent Researcher
+repository-code: "https://github.com/Thormatt/llm-negotiation"
+license: MIT
+keywords:
+  - large language models
+  - negotiation
+  - multi-agent systems
+  - game theory
+  - bargaining
+preferred-citation:
+  type: article
+  status: preprint
+  title: "Computed Targets and the Middleman Protocol: Mathematical Guardrails and Channel Removal for LLM Negotiators in Multi-Issue Bargaining"
+  authors:
+    - family-names: Matthiasson
+      given-names: Thor
+      affiliation: Independent Researcher
+  year: 2026
+  url: "https://github.com/Thormatt/llm-negotiation"

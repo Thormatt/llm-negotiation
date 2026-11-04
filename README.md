@@ -2,23 +2,25 @@
 
 **Mathematical Guardrails and Channel Removal for LLM Negotiators in Multi-Issue Bargaining**
 
-Thor Matthiasson | Independent Researcher | New Haven, Connecticut, USA
+Thor Matthiasson · Independent Researcher · New Haven, Connecticut, USA
 
-[Paper (PDF)](paper.pdf)
+[Paper (PDF, 32 pages)](paper.pdf) · arXiv preprint (link added once live) · [Data packet](data-packet/) · [Cite](#citation)
 
 ---
 
+## In short
+
+- **Words make LLM negotiators worse.** Telling a model about its opponent's preferences in plain text consistently lowers what it wins. Giving it a computed numeric target instead recovers the loss and cuts outcome variance 2.3–9.9× (Claude 3.5 Haiku, N = 200 per arm, Holm-corrected permutation tests).
+- **Eight models, five labs.** Claude Haiku and Opus 4.6, GPT-5, Gemini 3 Pro and Flash, Grok 3 and 3 Mini, DeepSeek R1 sort into three tiers by how much they respond.
+- **Remove the conversation.** When each side submits numbers to a neutral protocol instead of talking, Pareto efficiency reaches 91–96% against a 79% ceiling for the best language-channel setup, and the frontier-model advantage disappears.
+
 ## Abstract
 
-We study whether external strategic models can improve LLM negotiation outcomes in multi-issue bilateral bargaining, and how much of the LLM-to-LLM language channel is necessary at all. A NegotiationGRU (11K parameters) trained on heuristic-agent data computes concrete numeric target proposals injected into the LLM's prompt as hard directives. Our central finding is that *text-based strategic advice backfires* -- LLMs interpret opponent-preference information as a cooperation signal due to RLHF alignment -- while computed numeric targets produce three distinct, independently operating mechanisms.
+Aligned LLMs negotiate cooperatively by default. We test whether providing them with explicit opponent-preference information improves their bargaining outcomes, and find the opposite: text-based strategic advice consistently reduces buyer surplus, an effect we read as alignment-induced cooperation bias though we do not establish it causally. Replacing the advice with a numeric target proposal computed by a small external module (an 11K-parameter NegotiationGRU) recovers and exceeds the unassisted baseline.
 
-Scaled experiments (N = 200, randomized opener, Claude 3.5 Haiku) decompose the computed-target effect into: (1) **anchoring defense** (+7.1pp), neutralizing the seller's first-mover advantage; (2) a **residual opponent-modelling edge** (+3.0pp), persisting when the anchoring confound is removed; and (3) **variance collapse** (2.3--9.9x), reducing outcome standard deviation from +/-8.9% to +/-0.9--3.8% depending on opponent-model accuracy. Full ablations confirm an **Oracle ablation**: perfect opponent knowledge yields the highest Pareto efficiency (79%) and tightest variance (+/-0.9%) but the lowest buyer share (49.5%), mechanically converging to the Nash bargaining solution.
+Scaled experiments (N = 200, randomized opener, Claude 3.5 Haiku) decompose the effect into anchoring defense (+7.1pp, opener-dependent), a residual GRU-conditioned share edge (+3.0pp, opener-independent), and variance collapse (2.3–9.9×, format-driven); eight of ten pairwise Holm-Bonferroni-corrected comparisons reach p = 0.001. An Oracle ablation shows the cooperative-blend formula mechanically converges to Nash bargaining under accurate weights, yielding the highest Pareto efficiency (79%) but the lowest buyer share (49.5%) — a property of the chosen blend, not a fundamental law. Replication across eight models from five labs (Haiku, Opus 4.6, GPT-5, Gemini 3 Pro/Flash, Grok 3/Mini, DeepSeek R1) yields a three-tier taxonomy — scaffold-responsive (+3–7pp, 2–3× collapse), collapse-only (variance reduction without surplus shift), and no detectable effect at N = 50 for Opus 4.6 and Gemini Pro (power-limited) — with the consistency gap predicted by baseline negotiation stochasticity, not model size. Cross-model: a cheap Haiku-with-scaffold buyer keeps a 5.2pp edge against Grok 3 but loses 0.9–2.1pp to frontier sellers, and the variance-collapse property disappears (±11.3–20.3%).
 
-Replication across **eight models from five labs** -- Claude Haiku, Claude Opus 4.6, GPT-5, Gemini 3 Pro, Gemini 3 Flash, Grok 3, Grok 3 Mini, and DeepSeek R1 -- reveals a **three-tier taxonomy**: (i) *OM-effective* models (Grok 3, Haiku, Grok 3 Mini) exhibit 2.0--2.8x variance collapse and +3--7pp buyer advantage; (ii) *collapse-only* models (GPT-5, Gemini Flash, DeepSeek R1) show 1.4--1.6x variance reduction without surplus shift; and (iii) *OM-irrelevant* models (Opus 4.6, Gemini 3 Pro) already negotiate with low baseline variance (+/-4.5--8.0%), leaving nothing to compress. Cross-model experiments show that within-model the directive closes the consistency gap, but across-model the cheap-with-OM stack still loses share against frontier sellers (Opus 4.6 49.1%, GPT-5 48.1%, Gemini Pro 47.9%): the inference-compute arbitrage applies on the consistency dimension only.
-
-To recover the cross-model surplus gap, we test a stronger architectural intervention: **remove the language channel entirely**. Each side submits structured numeric inputs to a neutral middleman protocol that computes the outcome mathematically; LLMs translate user intent in and explain results back, but never converse. Replaying the N = 200 weight pairs through two protocols (Nash bargaining; the paper's cooperative blend) breaks the 79% Pareto ceiling: **Nash captures 96% of joint surplus** (at +/-18.7% buyer-share variance from corner solutions), and the **cooperative-blend protocol captures 91% at +/-0.2% variance** -- the lowest in the work. Replaying the four cross-model match-ups through the same protocols collapses the 7.3pp buyer-share spread (47.9--55.2%) to <=0.001pp; **the frontier-model advantage that survived computed targets does not survive channel removal**. A live LLMIO test (N = 50, qualitative-only preference labels translated by each side's Haiku) confirms that the cooperative-blend protocol's 50/50 outcome is structural rather than empirical and is robust to translation noise (drift 0.001 per game), while Nash's corner solutions amplify translation error (drift 0.181). We read the cross-model surplus asymmetry observed in language-channel deployments as a property of the channel, not of the participants.
-
-A **neural policy** (6,533-parameter MLP) trained via behavioral cloning and reward-weighted regression on 660 live LLM games successfully crosses the sim-to-real gap with 100% deal rate. Reward-weighted regression converges to the lowest-variance policy observed (+/-2.6%), suggesting that **offline RL in stochastic multi-agent environments naturally converges toward variance minimization rather than reward maximization**.
+We then show that the 11,078-parameter GRU reduces, behaviorally, to a 15-line analytical estimator with one tunable scalar: its weight predictions on LLM trajectories are at chance, variance collapse derives entirely from the directive format, and the residual share gain reduces to a single bias parameter. The architecture is best read as a structured numeric sub-agent with a tunable aggression knob, not a learned opponent model in the Theory-of-Mind sense. A stronger architectural intervention removes the language channel entirely: each side submits structured numeric inputs to a neutral middleman protocol. In offline replay, the N = 200 weight pairs routed through Nash bargaining and the cooperative-blend formula reach 96% and 91% Pareto efficiency respectively, breaking the 79% language-channel ceiling of the Oracle condition, and replaying the four cross-model match-ups collapses the 7.3pp buyer-share spread to ≤0.001pp; a live N = 50 Haiku-vs-Haiku LLMIO test confirms the cooperative-blend 50/50 split is structural and robust to translation noise (per-game drift 0.001 vs. Nash's 0.181), with cross-model LLMIO as future work. Appendix A reports a 6.5K-parameter neural policy that reaches 100% deal rate at the lowest variance observed; because it rests on a single RWR temperature and lacks the GRU-mask control, we treat it as hypothesis-generating rather than load-bearing.
 
 ## Key Results
 
@@ -41,7 +43,7 @@ A **neural policy** (6,533-parameter MLP) trained via behavioral cloning and rew
 | **Middleman: NashBargaining2P** | 51.4% | +/-18.7% | **96%** |
 | **Middleman: CooperativeBlend2P** | 50.0% | **+/-0.2%** | 91% |
 
-*Full results in Table 14 of the paper.*
+*Full results in Table 15 of the paper.*
 
 ### Cross-Model: language channel vs. middleman
 
@@ -52,7 +54,7 @@ A **neural policy** (6,533-parameter MLP) trained via behavioral cloning and rew
 | Haiku vs GPT-5 | 48.1% (+/-19.5%) | 50.6% | 50.0% |
 | Haiku vs Gemini 3 Pro | 47.9% (+/-20.3%) | 50.6% | 50.0% |
 
-*The 7.3pp cross-opponent spread under the language channel collapses to <=0.001pp under the middleman. Full results in Table 15 of the paper.*
+*The 7.3pp cross-opponent spread under the language channel collapses to <=0.001pp under the middleman. Full results in Table 16 of the paper.*
 
 ### Cross-Model Variance Collapse (within-model, language channel)
 
@@ -64,12 +66,15 @@ A **neural policy** (6,533-parameter MLP) trained via behavioral cloning and rew
 | GPT-5 | +/-7.0% | +/-5.0% | 1.40x |
 | Claude Opus 4.6 | +/-4.5% | +/-4.9% | 1.09x |
 
+*Full eight-model panel in Table 9 of the paper.*
+
 ## Repository Structure
 
 ```
 llm-negotiation/
   paper.pdf                    # Full paper (32 pages, 3 figures, 18 tables)
   paper.tex                    # LaTeX source (inline bibliography, builds standalone)
+  CITATION.cff                 # Citation metadata (GitHub "Cite this repository")
   AUDIT_REPORT.md              # Record of the pre-submission audit pass
   src/
     negotiation.py             # LLM negotiation engine (OpenRouter API)
@@ -181,16 +186,18 @@ All models accessed via OpenRouter:
 ## Citation
 
 ```bibtex
-@article{matthiasson2025computed,
-  title={Computed Targets and the Middleman Protocol:
-         Mathematical Guardrails and Channel Removal
-         for {LLM} Negotiators in Multi-Issue Bargaining},
-  author={Matthiasson, Thor},
-  year={2025},
-  note={Revised May 2026. Available at
-        \url{https://github.com/Thormatt/llm-negotiation}}
+@misc{matthiasson2026computed,
+  title  = {Computed Targets and the Middleman Protocol:
+            Mathematical Guardrails and Channel Removal
+            for {LLM} Negotiators in Multi-Issue Bargaining},
+  author = {Matthiasson, Thor},
+  year   = {2026},
+  note   = {Preprint. Code and data:
+            \url{https://github.com/Thormatt/llm-negotiation}}
 }
 ```
+
+The arXiv identifier will be added here once the preprint is live. GitHub's "Cite this repository" button reads [`CITATION.cff`](CITATION.cff).
 
 ## License
 
